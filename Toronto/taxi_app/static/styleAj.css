@@ -1,0 +1,259 @@
+.Ajhead{
+    height: 200px;
+    width: 100%;
+    background-color: #05d99c;
+}
+
+.aj1{
+    text-align: center;
+    margin-top: 10px;
+    padding: 0px 190px;
+    font-weight: lighter;
+    line-height: 37px;
+    font-size: 28px;
+}
+
+
+.Ajhead h1{
+    font-size: 60px;
+    padding: 30px;
+    text-align: center;
+}
+.ajh1{
+    color: #05d99c;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.ajh1s{
+    color: #05d99c;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.ajh1tab{
+     color: #05d99c;
+    text-align: center;
+    font-size: 38px;
+}
+.ajp{
+    padding: 25px 190px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.ajp1{
+    padding: 10px 190px;
+    font-size: 20px;
+    line-height: 35px;
+}
+.ajpara{
+    
+    padding: 10px 190px;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+
+
+
+.aj-table-container {
+    padding: 10px 190px;
+    margin-top: 10px;
+   
+}
+
+.aj-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    
+    
+    
+}
+.ajtline{
+    width: 100%;
+    margin: auto;
+    padding-top: 25px;
+border-bottom: 2px solid #ccc;
+}
+
+.aj-table-head {
+    
+    text-align: center;
+}
+
+
+.aj-table-cell {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+.aj-table-header{
+    text-align: center;
+    padding: 25px 20px;
+    border: 1px solid #ddd;
+}
+
+.aj-table-header {
+    font-weight: bold;
+    font-size: 16px;
+}
+.spe{
+    color: #05d99c;
+    font-size: 35px;
+    padding: 8px 0px;
+    margin-left: 190px;
+}
+.ajsp{
+   margin-left: 200px; 
+}
+.ajsp li{
+   padding: 5px 0px;
+}
+
+
+
+
+@media (max-width: 768px){
+    .Ajhead{
+        height: auto;
+        text-align: justify;
+       
+    }
+    .Ajhead h1{
+        padding: 10px 0px;
+    }
+    .aj1{
+         text-align: center;
+         padding: 0px 5px;
+    }
+    .ajh1{
+   
+    font-size: 28px;
+    margin-top: 30px;
+    }
+    .ajh1s{
+    
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    .ajp{
+        padding: 25px 5px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .aj-table-container {
+    
+        padding: 10px 5px;
+        margin-top: 10px;
+    }
+    .aj-table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: auto;
+        
+    }
+    .aj-table-cell {
+        padding: 10px ;
+        
+
+    }
+    .ajh1tab{
+        
+        font-size: 20px;
+    }
+    .spe{
+        color: #05d99c;
+        font-size: 25px;
+        margin-left: 0px;
+    }
+    .ajsp{
+    margin-left: 18px; 
+    }
+    .ajpara{
+        
+        padding: 25px 5px;
+        line-height: 30px;
+        text-align: center;
+
+    }
+    .ajp1{
+    padding: 10px 5px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+   .Ajhead{
+    height: auto;
+    text-align: justify;
+    padding: 0;
+   } 
+   .Ajhead h1{
+        padding: 10px 0px;
+    }
+        .aj1{
+         text-align: center;
+         padding: 0px 5px;
+    }
+    .ajp{
+    padding: 25px 5px;
+    font-size: 20px;
+    line-height: 35px;
+    }
+    .aj-table-container {
+    
+        padding: 10px 5px;
+        margin-top: 10px;
+    }
+    .aj-table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: auto;
+        
+    }
+    .aj-table-cell {
+        padding: 10px ;
+        
+
+    }
+    .ajh1tab{
+        
+        font-size: 20px;
+    }
+    .spe{
+        color: #05d99c;
+        font-size: 25px;
+    
+        margin-left: 0px;
+    }
+    .ajsp{
+    margin-left: 18px; 
+    }
+    .ajpara{
+        
+        padding: 25px 5px;
+        line-height: 30px;
+        text-align: center;
+
+    }
+    .ajh1s{
+    
+        font-size: 28px;
+        margin-top: 10px;
+    }
+     .ajp1{
+    padding: 10px 5px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+}

@@ -1,0 +1,2389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+     box-sizing: border-box;
+     height: auto;
+}
+#ellips{
+    color: white;
+    background-color: #00d082;
+    padding: 10px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    right: 50px;
+    top: 25px;
+    display: none;
+    }
+
+/* navigation bar style */
+
+.nav{
+    height: 130px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.nav-logo{
+    /* width: 250px; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 155px;
+   
+   
+      
+}
+.nav-img{
+   height: 95px;
+    width: 95px;  
+    cursor: pointer;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+   
+}
+.nav-ul li{
+    padding: 27px 18px;
+    cursor: pointer;
+
+}
+.nav-content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+  
+   
+}
+.nav-a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    color: inherit;
+  
+}
+.nav-ul li:hover{
+    color:rgba(6, 147, 227, 1);
+    
+}
+.select-nav{
+    outline: none;
+    border: none;
+}
+
+.nav-a::after{
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 1px;
+   background-color:rgba(6, 147, 227, 1);
+   left: 0;
+   bottom: -27px;
+   transition: width 0.3s ease;
+}
+.nav-a:hover::after{
+   width: 100%;
+}
+.nav-drop{
+   position: absolute; 
+   width: 230px;
+   top: 100px; 
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+   border-top: 2px solid #61ce70;
+   display: none;
+   background-color: white;
+   z-index: 999;
+   
+}
+.dropdown:hover  .nav-drop{
+   display: block; 
+}
+
+
+.nav-drop a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.nav-drop ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.nav-drop ul li{
+    padding: 15px
+}
+.nav-drop ul li a:hover{
+    color:rgba(6, 147, 227, 1);
+}
+
+
+/* home page */
+
+.book{
+   height: 100px;
+   width: 100vw;
+   background-color: #00d082; 
+   display: flex;
+}
+
+.book-icon a{
+    text-decoration: none;
+    color: black;
+    
+}
+#ic{
+    color: black;
+    padding: 0px 3px;
+}
+.book-no{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.no,.book-icon{
+    padding: 0px 15px;
+}
+.no{
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+    color: black;
+}
+.one{
+    color: rgb(79, 78, 78);
+    color: pointer;
+}
+.one:hover{
+    color: black;
+    cursor: pointer;
+}
+.booknow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    gap: 15px;
+}
+.b-now{
+    height: 50px;
+    width: 150px;
+    background-color:#2db791db;
+    color: red;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2px;
+    border-radius: 2px;
+}
+.ge{
+   height: 50px;
+    width: 150px;
+    background-color: #fff5cb;
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2px; 
+    border-radius: 2px;
+}
+.ge:hover{
+    background-color: #ffcb70;
+    color: #fff;
+}
+.b-now:hover{
+    color: blue;
+}
+
+.head-ban{
+    height: 400px;
+    position: relative;
+    
+}
+
+.head-ban{
+    background-image: url('./images/headimg.jpg');
+    background-attachment: fixed;
+}
+.head-ban {
+    height: 400px;
+    position: relative;
+    background-image: url('./images/headimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.PAT{
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.PAT::selection{
+    background-color: #00d082;
+    color: black;
+}
+.PAT-SUB::selection{
+    background-color: #00d082;
+    color: black;
+}
+.PAT-SUB{
+    text-align: center;
+    color: #fff;
+    padding: 10px ;
+    text-transform: uppercase; 
+
+}
+
+.f-booknow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+#f-btn{
+    border-radius: 40px;
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    background-color: #ff6900;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+#f-btn:hover{
+    background-color: transparent;
+    color: #ff6900;
+    border: 1px solid #ff6900;
+    cursor: pointer;
+}
+
+.f-booking{
+    width: 75%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 14%;
+    bottom: 60px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.f-date,.f-time,.f-picloc,.f-drop{
+    border-right: 1px solid #ccc;
+      display: flex;
+      padding: 25px;
+      flex-direction: column;
+      gap: 10px;
+
+}
+.f-date input,.f-time input{
+    border: none;
+    outline: none;
+}
+.f-drop{
+    padding-right: 50px;
+}
+.f-date p,.f-time p,.f-picloc p,.f-drop p{
+    font-size: 13px;
+    display: block;
+}
+#f-place{
+    border: none;
+    padding: 0px 5px 0px 10px;
+    font-size: 17px;
+    outline: none;
+}
+.hone{
+    position: relative;
+    top: 55px;
+    animation-name: h-anime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    
+}
+@keyframes h-anime{
+    from{
+        top:55px;
+
+    }
+    to{
+        top:-2px;
+    }
+}
+.f-booking{
+    animation-name: book;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.42, .78, 1, .62);
+}
+@keyframes book{
+     0% {
+    transform: translateX(-100vw) rotate(0deg); 
+  }
+  100% {
+    transform: translateX(0) rotate(360deg); 
+  }
+}
+.calls{
+    height: 235px;
+    width: 100%;
+    background-color: #7bdcb5;
+    display: flex;
+    flex-direction: column;
+}
+.callh1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 35px;
+}
+.callh1::selection{
+    background-color:#00d082 ;
+    color: black;
+}
+
+.nos{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    gap: 20px;
+    place-content: center;
+    place-items: center; 
+    
+}
+.nos::selection{
+    background-color:#00d082 ;
+}
+body::selection{
+     background-color:#00d082 ;
+}
+.no1,.no2,.no3,.no4{
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;  
+}
+.twostep{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.twostep::selection{
+    background-color:#00d082 ;
+    color: black;
+}
+.onestep,.steptwo{
+    height: 150;
+    width: 35%;
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+    color: #cf2e2e;
+    
+}
+.YT{
+    display: flex;
+    justify-content: center;
+   gap: 25px;
+    height: 330px;
+    width: 100%;
+
+}
+.review{
+    width: 100%;
+    height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.review::selection{
+     background-color:#00d082 ;
+}
+
+
+/* google*/
+
+
+.whole{
+    position: relative;
+}
+.carousel-container {
+    /* position: relative; */
+    width: 100%;
+    max-width: 980px; 
+    margin: auto;
+    overflow: hidden;
+    padding: 40px 0;
+    z-index: 1;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 30px; 
+    z-index: 1;
+}
+.review-card {
+    flex: 0 0 300px;
+    width: 300px;
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    height: 250px;
+}
+#prev-btn,
+#next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+    color: #ddd;
+}
+
+
+#prev-btn {
+    left: 230px;  
+}
+
+#next-btn {
+    right: 230px;  
+}
+.top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.stars {
+    color: gold;
+    margin-bottom: 10px;
+}
+.verified {
+    color: green;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.g-logo{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  
+}
+.online{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+  
+}
+@keyframes line{
+    from{
+        transform: translateX(1500px);
+    }
+    to{
+        transform: translateX(1px);
+    }
+}
+
+.rdiv{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    height: 200px;
+    width: 80%;
+    align-items: center;
+  
+   
+    
+}
+
+.onlineh1 h1{
+    padding-bottom: 15px;
+    animation-name: line;
+    animation-duration: 2s;
+}
+.onlineh1 h2{
+    animation-name: lines;
+    animation-duration: 2s;
+}
+@keyframes lines{
+    from{
+        transform: translateX(1500px);
+        transform: scale(0.5);
+    }
+    to{
+        transform: translateX(1px);
+        transform: scale(1);
+    }
+}
+
+/* Transfer sercive*/
+.tservice {
+  position: relative;
+  height: 890px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/cart.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(6px); 
+  z-index: 1;
+}
+
+.tservice-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  color: black;
+
+}
+
+.th1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.th3 {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.fourdiv {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  height: 460px;
+  width: 100%;
+  background-color: white;
+  z-index: 9;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.fiv img{
+    z-index: 10;
+}
+.fdiv{
+    height: 200px;
+    width: 600px;
+    flex-basis: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 40px;
+    overflow: hidden;
+
+}
+.fh3{
+    margin-top: 70px;
+ 
+}
+.ch3{
+    margin-bottom: 50px;
+}
+.yyz h1{
+    font-weight: bold;
+    color:#cf2e2e;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    font-size: 40px;
+    
+    bottom: 15px;
+
+    z-index: 99;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carslide {
+     height: 400px; 
+     width: 90%; 
+     max-width: 1200px; 
+     margin: 0 auto; 
+    border-radius: 8px; 
+    display: flex; 
+    overflow: hidden; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    background-color: #ffffff; 
+}
+
+        
+.car1, .car2, .car3 {
+     height: 100%; 
+     flex: 1; 
+     position: relative; 
+     overflow: hidden; 
+    transition: flex 0.5s ease-in-out, transform 0.5s ease-in-out; 
+    cursor: pointer; 
+          
+}
+
+        
+.car1 img, .car2 img, .car3 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    transition: transform 0.5s ease-in-out;
+    display: block; 
+            
+}
+
+        
+.carhead {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: start; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+        
+.carhead h1 {
+    font-size: 1.8rem; 
+    margin-bottom: 10px; 
+    color: #ffffff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+      
+.carhead h3 {
+     font-size: 1rem; 
+     color: #e0e0e0; 
+     max-width: 80%; 
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+ }
+
+       
+.car1:hover, .car2:hover, .car3:hover {
+     flex: 2; 
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+}
+
+        
+.car1:hover img, .car2:hover img, .car3:hover img {
+     transform: scale(1.05); 
+}
+
+       
+.car1:hover .carhead, .car2:hover .carhead, .car3:hover .carhead {
+    opacity: 1; 
+}
+
+      
+.flat{
+   margin: 0 auto;
+   height: 400px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   margin-bottom: 50px;
+
+
+}
+.flat img{
+    height: 100%;
+    
+}
+.airport_travel{
+    height: 830px;
+    width: 100%;
+    margin-bottom: 50px;
+    background: linear-gradient(135deg, #6ec1e4 10%, #ffceec 90%);
+}
+.choice h1{
+    padding: 35px 0px;
+    display: block;
+    color: rgba(255, 105, 0, 1);
+    font-size: 40px;
+    
+}
+.ch1{
+    width: 250px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+}
+.ch2{
+    width: 250px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+}
+.choice{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.fleet{
+    height: 510px;
+    width: 80%;
+    margin: 0 auto;
+   
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+
+}
+.d1,.d2,.d3,.d4,.d5,.d6{
+    height: 250px;
+    width: 300px;
+    z-index: 4;
+    flex-basis: 30%;
+    
+    
+   
+}
+.blank{
+    height: 200px;
+    width: 100%;
+    background: blue;
+}
+.d1,.d2,.d3,.d4,.d5,.d6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.men {
+    position: relative;
+    height: 750px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.men::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.men h1 {
+    position: relative; 
+    z-index: 1;
+    text-align: center;
+    font-size: 45px;
+    padding: 8px;
+}
+.feed1,.feed2,.feed3{
+    height: auto;
+    width: 400px;
+ 
+    padding: 10px;
+    position: relative;
+
+}
+.feed1 p,.feed2 p,.feed3 p{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.feed1 img,.feed2 img,.feed3 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.ds{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.men-feed{
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+
+    margin-top: 100px;
+    display: flex;
+
+    gap: 10px;
+}
+.stars3{
+    color: gold;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 150px;
+    font-size: 25px;
+}
+.stars2{
+    color: gold;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 180px;
+    right: 150px;
+    font-size: 25px;
+}
+.stars1{
+    color: gold;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 120px;
+    right: 150px;
+    font-size: 25px;
+}
+.gta{
+    height: 400px;
+    width: 1100px;
+    margin: 0 auto;
+    
+    
+    
+}
+.gta h1{
+    font-size: 35px;
+    
+    
+}
+.gta h2{
+    padding: 10px;
+    margin-left: 17px;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+.gtap img{
+    height: 250px;
+    width: 270px;
+}
+.gtap h1{
+    color: #cf2e2e;
+    padding: 10px;
+    margin: 30px;
+    font-size: 40px;
+    
+}
+.gtap{
+    display: flex;
+    margin: 25px;
+}
+.page-wrapper {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;}
+body{
+    height: 100vh;
+    overflow: visible;
+}
+.Dblue{
+    height: auto;
+    width: 500px;
+    
+}
+.maingta{
+    display: flex;
+    width: 100%;
+    height: 860px;
+    
+}
+.Dblue h1{
+    color:rgb(31, 31, 231);
+    font-size: 40px;
+     font-family: 'Times New Roman', Times, serif;
+}
+.Mblue{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     
+}
+.Dblue h1::selection{
+    color: black;
+}
+.Dblue p{
+    font-size: 18px;
+    padding: 20px 0px;
+    font-weight: bold;
+    
+
+}
+.dividedtwo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+.divided1,.divided2{
+    padding: 0px 30px;
+}
+#dh1{
+    color: #0693e3;
+    font-size: 40px;
+
+}
+#dp{
+       font-size: 18px;
+    padding: 15px 0px;
+    font-weight: bold;
+
+}
+.serve h1{
+    text-align: center;
+
+}
+.serve h1::selection{
+    color: black;
+}
+.serve h3{
+    text-align: center;
+    padding: 2px 0px;
+    
+}
+.Limousine h1{
+    color: #00d082;
+    text-align: center;
+    font-size: 47px;
+    padding-bottom: 5px;
+}
+.Limousine h3{
+    text-align: center;
+    line-height: 30px;
+}
+.limotag{
+    width: 70%;
+    margin: 0 auto;
+}
+.limotag h2{
+    color: #3be3a5;
+    text-align: center;
+    font-size: 40px;
+}
+.limotag h1::selection{
+    color: black;
+}
+.limotag h2::selection{
+    color: black;
+}
+.Limousine{
+    padding-bottom: 50px;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.Mred{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     font-family: 'Times New Roman', Times, serif;
+}
+.Dred h1::selection{
+    color: black;
+}
+.Dred{
+    height: auto;
+    width: 500px;
+    margin-bottom: 50px;
+
+    
+}
+.hred{
+    color: #fe2d2d;
+    padding: 6px 0px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*media query*/
+
+@media (max-width: 768px){
+    .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto; 
+}
+#ellips{
+    display: block;
+}
+
+.nav-logo {
+    padding-left: 0; 
+    background-color: #7bdcb5;
+    justify-content: start;
+   margin-left: -250px;
+    
+}
+
+.nav-img {
+    height: 70px; 
+    width: 70px;
+    margin-left: -100px;
+   
+   
+}
+
+.nav-content {
+    width: 100%;
+    padding-left: 0; 
+}
+
+.nav-ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 10px; 
+    display: none;
+}
+
+.nav-ul.active {
+  display: block;
+}
+
+.nav-ul li {
+    padding: 10px 0; 
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.nav-ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.select-nav {
+    display: block; 
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    border: 1px solid #777; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    font-size: 0.8em; 
+    z-index: 10;
+}
+
+.nav-drop {
+    display: none; 
+    position: static; 
+    width: 100%;
+    box-shadow: none;
+    border-top: none;
+    
+}
+
+.nav-drop ul {
+    flex-direction: column;
+    padding: 0; 
+}
+
+.nav-drop ul li {
+    padding: 30px 15px; 
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.nav-drop ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-drop a {
+    color: black;
+   
+}
+
+
+/* Book Section */
+.book {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px; 
+    height: auto; 
+}
+
+.book-no, .book-icon, .booknow {
+    width: 100%;
+    margin-bottom: 15px; 
+}
+
+.book-no {
+    justify-content: center; 
+    top: 0; 
+    font-size: 0.9em; 
+}
+
+.no, .book-icon {
+    padding: 0 8px; 
+}
+
+.booknow {
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.b-now, .ge {
+    margin: 0; 
+    width: 90%; 
+    font-size: 1.2em; 
+    padding: 12px 0;
+    box-sizing: border-box; 
+}
+
+
+/* Head Banner */
+.head-ban {
+    height: 300px;
+    padding: 15px;
+}
+
+.hone {
+    top: 20px; 
+    animation-delay: 0.5s; 
+}
+@keyframes h-anime {
+    from { top: 20px; }
+    to { top: 5px; } 
+}
+
+.PAT {
+    font-size: 1.6em; 
+    padding: 10px;
+}
+
+.PAT-SUB {
+    font-size: 1em; 
+    padding: 5px;
+}
+
+.f-booking {
+    flex-direction: column;
+    padding: 10px;
+    width: 90%;
+    left: 5%;
+    bottom: 2px; 
+    height: auto;
+}
+
+.f-time, .f-date, .f-picloc, .f-drop {
+    border-right: none;
+    border-bottom: 1px solid #eee; 
+    padding: 10px;
+    width: 100%; 
+    gap: 5px;
+}
+
+.f-date:last-of-type,
+.f-time:last-of-type,
+.f-picloc:last-of-type,
+.f-drop:last-of-type {
+    border-bottom: none; 
+}
+
+#f-place {
+    width: 90%; 
+    font-size: 1em;
+}
+
+#f-btn {
+    width: 90%;
+    padding: 15px 0px;
+    margin-top: 10px; 
+}
+#f-btn:hover{
+    background-color: transparent;
+    color: #ff6900;
+}
+
+.f-date,
+.f-time {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.icon-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.hidden-input {
+    display: none;
+    position: absolute;
+    left: 30px; 
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Calls Section */
+.calls {
+    height: auto; 
+    padding: 20px;
+}
+
+.callh1 {
+    font-size: 1.5em; 
+    padding: 15px;
+}
+
+
+.nos {
+    grid-template-columns: 1fr;
+    gap: 15px; 
+    padding: 0 10px;
+}
+
+.no1, .no2, .no3, .no4 {
+    width: 90%; 
+    font-size: 1.2em; 
+    height: 45px; 
+}
+
+/* Two Step Section */
+.twostep {
+    height: auto; 
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px; }
+
+.onestep, .steptwo {
+    width: 90%;
+    font-size: 0.95em; 
+    height: auto; 
+    padding: 15px; 
+}
+
+/* YouTube Section */
+.YT {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    height: auto; 
+}
+
+.ifs {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.ifs iframe {
+    height: 200px;
+}
+
+/* Review Section */
+.review {
+    height: auto; 
+    padding: 20px;
+}
+
+.review > div {
+    margin-bottom: 8px; 
+ 
+}
+
+.review img {
+    height: 25px; 
+    width: 25px;
+}
+
+.review p {
+    font-size: 0.9em; 
+}
+
+
+/* Carousel */
+#prev-btn, #next-btn {
+    display: none;
+}
+
+
+.carousel-track {
+    gap: 15px; 
+}
+
+.review-card {
+    min-width: 95%; 
+    margin: 0 auto;
+    padding: 15px;
+    height: auto; 
+}
+.review-card p {
+    font-size: 0.85em; 
+}
+.review-card h4 {
+    font-size: 1em;
+}
+.review-card .date {
+    font-size: 0.8em;
+}
+
+
+/* Online Booking Steps */
+.online {
+    height: auto; 
+    padding: 20px;
+}
+
+.onlineh1 h1, .onlineh1 h2 {
+    font-size: 1.3em; 
+    margin-bottom: 10px;
+}
+
+.rdiv {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px; 
+    height: auto; 
+}
+
+.route, .car, .form {
+    width: 90%;
+    margin-bottom: 0; 
+}
+
+.route img, .car img, .form img {
+    height: 35px; 
+    width: 40px;
+}
+
+.route p, .car p, .form p {
+    font-size: 0.9em; 
+    line-height: 1.4;
+}
+
+/* Tservice Section */
+.tservice {
+    height: auto; 
+    padding-bottom: 30px;
+}
+
+.tservice-content {
+    padding: 15px;
+}
+
+.th1 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.th3 {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.fourdiv {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    height: auto; 
+    padding: 0 10px;
+}
+
+.fdiv {
+    width: 90%; 
+    height: auto; 
+    padding: 20px;
+}
+.fh3, .ch3 {
+    margin-top: 15px; 
+    font-size: 1em; 
+    text-align: center;
+}
+
+.yyz h1 {
+    font-size: 1.5em; 
+    height: auto; 
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Car Slides */
+.carslide {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    height: auto; 
+    width: 100%; 
+}
+
+.car1, .car2, .car3 {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.carhead {
+    padding: 15px;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+/* Disable hover effects for mobile */
+.car1:hover, .car2:hover, .car3:hover {
+    flex: 1;
+    transform: none;
+    box-shadow: none;
+}
+.car1:hover img, .car2:hover img, .car3:hover img {
+    transform: none;
+}
+.car1:hover .carhead, .car2:hover .carhead, .car3:hover .carhead {
+    opacity: 1;
+}
+
+.carh1 {
+    font-size: 1.2em; 
+}
+
+.carh3 {
+    font-size: 0.85em; 
+}
+
+/* Flat Image */
+.flat {
+    height: auto; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+.flat img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Airport Travel - Why Choose Us */
+.airport_travel {
+    height: auto; 
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.choice {
+    height: auto; 
+    padding: 15px 0;
+}
+
+.choice h1 {
+    padding: 15px 0;
+    font-size: 1.6em;
+}
+
+.ch1, .ch2 {
+    display: none; 
+}
+
+.fleet {
+    height: auto;
+    width: 90%;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6 {
+    width: 90%;
+    height: auto; 
+    padding: 15px;
+ }
+
+.d1 h1, .d2 h1, .d3 h1, .d4 h1, .d5 h1, .d6 h1 {
+    font-size: 1.1em; 
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.d1 p, .d2 p, .d3 p, .d4 p, .d5 p, .d6 p {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Men Feed (Testimonials) */
+.men {
+    height: auto; 
+    padding: 20px;
+}
+
+.men h1 {
+    font-size: 1.6em;
+    padding: 10px;
+}
+
+.men-feed {
+    height: auto;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feed1, .feed2, .feed3 {
+    width: 90%;
+    margin-bottom: 0;
+    padding: 15px;
+    height: auto; 
+}
+
+.feed1 p, .feed2 p, .feed3 p {
+    font-size: 0.9em; 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.ds img {
+    width: 40px; 
+    height: 40px;
+}
+
+.stars1, .stars2, .stars3 {
+    position: static; 
+    font-size: 1.2em; 
+    margin-top: 10px;
+    text-align: left; 
+    right: auto; 
+    bottom: auto; 
+}
+
+
+/* Main GTA */
+.maingta {
+    height: auto; 
+    padding: 20px;
+}
+
+.gta {
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+}
+
+.gta h1, .gta h2 {
+    font-size: 1.4em; 
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.gtap {
+    flex-direction: column;
+    margin: 15px 0;
+    gap: 15px; 
+}
+
+.gtap img {
+    width: 90%; 
+    height: auto;
+    margin-bottom: 0; 
+    max-width: 300px; 
+}
+
+.gtap h1 {
+    font-size: 1.6em;
+    padding: 10px;
+    margin: 0; 
+    text-align: center;
+}
+
+/* Blue and Red Sections (Location Rates) */
+.Mblue, .Mred {
+    padding: 15px;
+    height: auto;
+}
+
+.Dblue, .Dred {
+    width: 95%;
+    padding: 15px;
+    margin: 0 auto 20px auto;
+}
+
+.Dblue h1, .Dred h1 {
+    font-size: 1.4em; 
+    margin-bottom: 8px;
+}
+
+.Dblue p, .Dred h4 {
+    font-size: 0.9em; 
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+
+/* Divided Two Sections (GTA Flat Rates) */
+.dividedtwo {
+    flex-direction: column;
+    padding: 15px;
+    height: auto; 
+}
+
+.divided1, .divided2 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+#dh1 {
+    font-size: 1.3em; 
+    margin-bottom: 8px;
+}
+
+#dp {
+    font-size: 0.9em;
+    padding: 5px 0;
+    margin-bottom: 0;
+}
+
+/* Airports We Serve */
+.serve {
+    padding: 20px;
+    height: auto; 
+    padding-bottom: 80px; 
+}
+
+.serve h1 {
+    font-size: 1.8em;
+}
+
+.serve h3 {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* Limousine Section */
+.Limousine {
+    padding: 20px;
+    padding-bottom: 30px; 
+}
+
+.limotag {
+    width: 90%;
+}
+
+.limotag h1 {
+    font-size: 1.6em;
+}
+
+.limotag h3, .limotag h2 {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Navigation */
+    .nav {
+        flex-direction: row;
+        justify-content: space-around; 
+        padding: 15px 30px;
+        height: 100px; 
+    }
+
+    .nav-logo {
+        padding-left: 0;
+        margin-right: 20px; 
+     
+    }
+
+    .nav-img {
+        height: 80px; 
+        width: 80px;
+        
+    }
+
+    .nav-content {
+        width: auto;
+        padding-left: 0;
+        flex-grow: 1; 
+        justify-content: flex-end; 
+    }
+
+    .nav-ul {
+        flex-direction: row;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .nav-ul li {
+        margin: 0 10px;
+        padding: 0;
+        border-bottom: none; 
+    }
+
+    .nav-a {
+        padding: 27px 18px; 
+        width: auto;
+    }
+
+    .select-nav {
+        display: none; 
+    }
+
+    .nav-drop {
+        position: absolute;
+        width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        top: 100%;
+        background-color: white; 
+    }
+
+    .nav-drop ul li {
+        padding: 15px;
+        text-align: left;
+        border-bottom: none;
+    }
+     .dropdown:hover  .nav-drop{
+        display: block; 
+    }
+
+
+
+
+
+
+    
+
+    /* Book Section */
+    .book {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 30px;
+        height: 100px; 
+    }
+
+    .book-no, .booknow {
+        width: auto;
+        margin-bottom: 0;
+        flex-direction: row; 
+        gap: 15px;
+    }
+
+    .book-no {
+        font-size: 1em;
+    }
+
+    .b-now, .ge {
+        width: 150px;
+        padding: 0px 2px; 
+        font-size: 16px;
+        margin: 0 5px;
+    }
+
+    /* Head Banner */
+    .head-ban {
+        height: 350px; 
+        padding: 20px;
+    }
+
+    .hone {
+        top: 55px; 
+    }
+    @keyframes h-anime {
+        from { top: 55px; }
+        to { top: -2px; }
+    }
+
+    .PAT {
+        font-size: 2.5em;
+    }
+
+    .PAT-SUB {
+        font-size: 1.2em;
+    }
+
+    .bookings {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%; 
+        left: 15%; 
+        bottom: 65px; 
+        height: 90px; 
+        padding: 25px; 
+    }
+
+    .pdates, .ptimes, .plocs, .pdrops, .bnows {
+        width: 48%; 
+        margin: 1%;
+        border-right: 1px solid #ccc; 
+        border-bottom: none; 
+        padding: 10px; 
+    }
+    .pdrops {
+        border-right: none; 
+    }
+
+    .bnbtn {
+        width: 98%; 
+        padding: 20px 30px;
+        margin-top: 0;
+    }
+    .bnows {
+        width: 98%; 
+    }
+
+    /* Calls Section */
+    .callh1 {
+        font-size: 2.2em;
+    }
+
+    .nos {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .no1, .no2, .no3, .no4 {
+        width: 90%; 
+        font-size: 1.5em;
+        height: 50px;
+    }
+
+    /* Two Step Section */
+    .twostep {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        height: 170px;
+    }
+
+    .onestep, .steptwo {
+        width: 45%;
+        font-size: 1.1em;
+        height: 150px;
+        padding: 0; 
+    }
+
+    /* YouTube Section */
+    .YT {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        height: 330px;
+        padding: 30px;
+    }
+
+    .ifs {
+        width: 48%;
+    }
+
+    .ifs iframe {
+        height: 300px; 
+    }
+
+    /* Review Section */
+    .review {
+        height: 200px;
+        padding: 40px;
+    }
+
+    .review > div {
+        margin-bottom: 10px;
+    }
+
+    .review img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .review p {
+        font-size: 1em;
+    }
+
+    /* Carousel */
+    #prev-btn, #next-btn {
+        display: block; 
+        top: 50%; 
+        transform: translateY(-50%);
+        font-size: 30px;
+    }
+    #prev-btn { left: 50px; }
+    #next-btn { right: 50px; } 
+
+
+    .carousel-track {
+        gap: 30px;
+    }
+
+    .review-card {
+        min-width: 45%;
+        margin: 10px auto;
+        height: 250px; 
+        padding: 20px; 
+    }
+    .review-card p {
+        font-size: 0.9em;
+    }
+
+
+    /* Online Booking Steps */
+    .online {
+        height: 320px;
+        padding: 30px;
+    }
+
+    .onlineh1 h1, .onlineh1 h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .rdiv {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+        height: 200px;
+    }
+
+    .route, .car, .form {
+        width: 30%; 
+        margin: 1.5%;
+    }
+
+    .route img, .car img, .form img {
+        height: 55px;
+        width: 60px;
+    }
+
+    .route p, .car p, .form p {
+        font-size: 1em;
+        line-height: 28px;
+    }
+
+    /* Tservice Section */
+    .tservice {
+        height: 890px;
+        padding-bottom: 0;
+    }
+
+    .tservice-content {
+        padding: 30px;
+    }
+
+    .th1 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+
+    .th3 {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .fourdiv {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        height: 460px;
+        padding: 0;
+    }
+
+    .fdiv {
+        width: 45%; /* Two columns */
+        height: 200px;
+        padding: 40px;
+    }
+    .fh3, .ch3 {
+        margin-top: 70px;
+        font-size: 1em;
+    }
+
+    .yyz h1 {
+        font-size: 1.8em;
+        height: 100px;
+        position: absolute; 
+        bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    /* Car Slides */
+    .carslide {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        height: 400px;
+        width: 90%;
+    }
+
+    .car1, .car2, .car3 {
+        width: 48%; 
+        margin-bottom: 0;
+        flex: 1; 
+    }
+    .carhead {
+        opacity: 0; 
+    }
+    /* Re-enable hover effects */
+    .car1:hover, .car2:hover, .car3:hover {
+        flex: 2;
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+    .car1:hover img, .car2:hover img, .car3:hover img {
+        transform: scale(1.05);
+    }
+    .car1:hover .carhead, .car2:hover .carhead, .car3:hover .carhead {
+        opacity: 1;
+    }
+
+    .carh1 {
+        font-size: 1.8em;
+    }
+
+    .carh3 {
+        font-size: 1em;
+    }
+
+    /* Flat Image */
+    .flat {
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .flat img {
+        width: auto; 
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Airport Travel - Why Choose Us */
+    .airport_travel {
+        height: 1300px;
+        padding: 0; 
+        margin-bottom: 50px;
+    }
+
+    .choice {
+        height: 190px;
+        padding: 0;
+    }
+
+    .choice h1 {
+        font-size: 2.2em;
+        padding: 35px 0;
+    }
+
+    .ch1, .ch2 {
+        display: block; 
+    }
+
+    .fleet {
+        height: 510px;
+        width: 80%;
+        margin-top: 20px;
+        gap: 50px;
+    }
+
+    .d1, .d2, .d3, .d4, .d5, .d6 {
+        width: 30%; 
+        height: 250px;
+        padding: 10px;
+    }
+
+    .d1 h1, .d2 h1, .d3 h1, .d4 h1, .d5 h1, .d6 h1 {
+        font-size: 1.2em;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .d1 p, .d2 p, .d3 p, .d4 p, .d5 p, .d6 p {
+        font-size: 0.9em;
+        line-height: 28px;
+    }
+
+    /* Men Feed (Testimonials) */
+    .men {
+        height: 750px;
+        padding: 0;
+    }
+
+    .men h1 {
+        font-size: 2.2em;
+        padding: 8px;
+    }
+
+    .men-feed {
+        height: 500px;
+        margin-top: 100px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .feed1, .feed2, .feed3 {
+        width: 400px;
+        padding: 10px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .feed1 p, .feed2 p, .feed3 p {
+        font-size: 1.1em; 
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .ds img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .stars1, .stars2, .stars3 {
+        position: absolute; 
+        font-size: 1.5em;
+        margin-top: 0;
+        text-align: right; 
+    }
+    .stars3 { right: 150px; bottom: 15px; }
+    .stars2 { right: 150px; bottom: 180px; }
+    .stars1 { right: 150px; bottom: 120px; }
+
+    /* Main GTA */
+    .maingta {
+        height: 860px;
+        padding: 0;
+    }
+
+    .gta {
+        width: 1100px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .gta h1, .gta h2 {
+        font-size: 2em;
+        padding: 15px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .gtap {
+        flex-direction: row;
+        margin: 25px;
+    }
+
+    .gtap img {
+        width: 270px; 
+        height: 250px;
+        margin-bottom: 0;
+        max-width: none;
+    }
+
+    .gtap h1 {
+        font-size: 2.5em;
+        padding: 10px;
+        margin: 30px;
+        text-align: left;
+    }
+
+
+    /* Blue and Red Sections (Location Rates) */
+    .Mblue, .Mred {
+        padding: 20px;
+    }
+
+    .Dblue, .Dred {
+        width: 80%; 
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .Dblue h1, .Dred h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .Dblue p, .Dred h4 {
+        font-size: 1em;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    /* Divided Two Sections (GTA Flat Rates) */
+    .dividedtwo {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px;
+        height: auto;
+    }
+
+    .divided1, .divided2 {
+        width: 48%;
+        margin-bottom: 0; 
+        padding: 0px 30px;
+    }
+
+    #dh1 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    #dp {
+        font-size: 1em;
+        padding: 15px 0px;
+    }
+
+
+    /* Airports We Serve */
+    .serve {
+        padding: 40px;
+        padding-bottom: 110px;
+    }
+
+    .serve h1 {
+        font-size: 2.5em;
+    }
+
+    .serve h3 {
+        font-size: 1em;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    /* Limousine Section */
+    .Limousine {
+        padding-bottom: 50px; 
+    }
+
+    .limotag {
+        width: 70%; 
+    }
+
+    .limotag h1 {
+        font-size: 2.2em;
+    }
+
+    .limotag h3, .limotag h2 {
+        font-size: 1em;
+        line-height: 30px; 
+        margin-top: 0;
+    }
+
+}
+

@@ -1,0 +1,263 @@
+
+<div class="page-wrapper">
+
+{% extends 'base.html' %}
+
+
+
+{% load static %}
+
+{% block content%}
+<div class="book" style="border-bottom: 1px solid #eee; background-color: #05d99c;" >
+    <div class="book-no">
+        <div class="no"> <span class="one">1 800-2608901</span> | <span class="one">(647) 6895848</span></div>
+        <div class="book-icon">
+            <a href=""><i class="bi bi-facebook" id="ic"></i></a>
+            <a href=""><i class="bi bi-twitter" id="ic"></i></a>
+            <a href=""><i class="bi bi-instagram" id="ic" ></i></a>
+            <a href=""><i class="bi bi-linkedin" id="ic"></i></a>
+        </div>
+
+    </div>
+    <div class="booknow">
+        <div class="b-now">
+            BOOK NOW
+        </div>
+        <div class="ge">
+            GET QUOTE
+        </div>
+    </div>
+
+</div>
+
+<div class="anhead">
+    <h1>Ancaster Airport Limo Service</h1>
+</div>
+<h1 class="anh1">ANCASTER AIRPORT LIMO SERVICE & TAXI SERVICE</h1>
+<p class="anp">Being one of the favorite Ancaster Airport Limousine Service providers is not an easy task. There is a lot to manage whether you are traveling for work or you are traveling for family holidays. At Ancaster Airport Limo we assure you that when it comes to managing your transportation to Toronto Pearson airport or Hamilton Airport you can trust us.</p>
+<p class="anp">Toronto Pearson Airport is one of the very busy airports in North America, especially during the holiday season it’s too busy. To travel to the airport, you need professional service. Acaster Airport Taxi and Limo will ensure you receive top-notch service.</p>
+<p class="anp">Our latest model allows you to choose from our latest model fleet for all your travel needs. We have minivans, SUVs, and luxury sedans for all your travel needs. Ancaster Airport limousine service demonstrates how many passengers we can accommodate and how well-known our transportation is. To and from the airport, our experienced drivers provide you with professional service.</p>
+
+<div class="rounds">
+
+    <div class="wrd">
+        <div class="line"></div>
+        <div class="mr1">
+        <div class="r1" style="color: white;">1</div>
+        <p>Enter Ride Details</p>
+    </div>
+
+    <div class="mr1">
+        <div class="r1">2</div>
+        <p>Choose a Vehicle</p>
+    </div>
+
+    <div class="mr1">
+        <div class="r1">3</div>
+        <p>Enter Contact Details</p>
+    </div>
+
+    <div class="mr1">
+        <div class="r1">4</div>
+        <p>Booking Summary</p>
+    </div>
+
+    </div>
+    
+</div>
+
+
+
+<div class="form-div">
+    <div class="pic-form">
+        <form action="" method="post"  onsubmit="syncHiddenFields()">
+            {% if form.errors %}
+              <div style="color: red;">
+                 {{ form.errors }}
+              </div>
+            {% endif %}
+            {% csrf_token %}
+        <p class="hp">Ride Details</p>
+
+       <div class="form-group-row">
+            <div class="form-field date-field">
+                <label for="pickupDate">PICKUP DATE <span class="tooltip-icon">?</span></label>
+                <input type="date" id="pickupDate" name="PickupDate">
+            </div>
+            <div class="form-field time-field">
+                <label for="pickupTime" style="display: block; padding: 5px 0px;">PICKUP TIME <span class="tooltip-icon">?</span></label>
+                <input type="time" id="pickupTime" name="PickupTime">
+            </div>
+        </div>
+
+        <div class="form-group location-field">
+            <label for="pickupLocation">PICKUP LOCATION <a href="" class="use-my-location">USE MY LOCATION</a> <span class="tooltip-icon">?</span></label>
+            <div class="input-with-icon">
+                <input type="text" id="pickupLocation" placeholder="Enter a location" name="PickupLocation">
+           
+            </div>
+        </div>
+          <div class="form-group location-field">
+            <label for="dropoffLocation">DROP-OFF LOCATION</label>
+            <input type="text" id="dropoffLocation" placeholder="Enter a location" name="DropOff">
+        </div>
+
+        <div class="form-group transfer-type">
+            <label for="transferType">TRANSFER TYPE</label>
+            <input type="hidden" id="transferInput" name="Transfer" value="One Way">
+             <div class="custom-select" onclick="toggleDropdown()">
+                <div id="selectedOption">One Way</div>
+                <div class="dropdown-arrow"><span class="ts" >▼</span></div>
+                <div class="dropdown-options" id="dropdownOptions">
+                    <div onclick="selectOption('One Way')">One Way</div>
+                    <div onclick="selectOption('Return')">Return</div>
+                    <div onclick="selectOption('Return (new ride)')">Return (new ride)</div>
+                </div>
+            </div>
+        </div>
+        <div class="ex">
+            <p>Extra options</p>
+        </div>
+
+
+        <div class="form-group extra-time">
+            <label for="extraTime">Extra Time <span class="tooltip-icon" title="Add extra waiting time">(?)</span></label>
+            <input type="hidden" id="extraTimeInput" name="ExtraTime" value="0 minute(s)">
+            <div class="custom-select-time" id="extraTimeSelect">
+                <div id="selectedTime" >0 minute(s) <span class="ts" style="padding-left: 410px;"> ▼</span> </div>
+                <div class="dropdown-options" id="dropdownTimeOptions">
+                    <div onclick="selectTime('0 minute(s)')">0 minute(s)</div>
+                    <div onclick="selectTime('10 minute(s)')">10 minute(s)</div>
+                    <div onclick="selectTime('20 minute(s)')">20 minute(s)</div>
+                    <div onclick="selectTime('30 minute(s)')">30 minute(s)</div>
+                    <div onclick="selectTime('40 minute(s)')">40 minute(s)</div>
+                    <div onclick="selectTime('50 minute(s)')">50 minute(s)</div>
+                    <div onclick="selectTime('60 minute(s)')">60 minute(s)</div>
+                </div>
+            </div>
+        </div>
+   
+     <div class="choose" >
+        <input type="submit" value=" Choose a vehicle >">
+       
+    </div>
+
+</form>
+    </div>
+
+    <div class="google">
+        <div class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d368908.3462260093!2d-79.71981069048103!3d43.750093759660224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTORONTO%20TAXY%20SERVICE%20canada!5e0!3m2!1sen!2sin!4v1750227192613!5m2!1sen!2sin" width="558" height="517" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <div class="map-loc">
+            <div class="map-loca">
+                <i class="bi bi-geo-alt"></i>
+                <div class="map-dis">
+                    <p>Total distance</p>
+                    <h1>0 km</h1>
+                </div>
+
+            </div>
+            <div class="map-time">
+                <i class="bi bi-clock"></i>
+                   <div class="map-dis">
+                    <p>Total time</p>
+                    <h1>0 h 0 m</h1>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+   
+</div>
+
+<div class="calls" style="margin-top: 10px;">
+    <h1 class="callh1">RESERVE YOUR RIDE</h1>
+    <div class="nos">
+        <div class="no1">(647) 689-5848</div>
+        <div class="no2">1 800-260-8901</div>
+        <div class="no3">Online Booking</div>
+        <div class="no4">Booking By Email</div>
+
+    </div>
+    
+</div>
+
+
+
+
+<div class="anh1s">Why You Should Use Ancaster Airport Taxi <br> Service WITH CAR SEAT</div>
+
+<h1 class="anh1b" >ANCASTER AIRPORT TAXI SERVICES SAVES TIME</h1>
+
+<p class="anp">There are several reasons why you may want to consider using Ancaster Airport Taxi services:</p>
+<p class="anp">1. Save time: By using a taxi service, you can avoid the stress and hassle of driving to the airport, finding parking, and unloading your luggage. With Ancaster Airport Taxi, you can simply book a ride and have a professional driver take you to your destination, allowing you to relax and save time.</p>
+<p class="anp">2. Convenience: Ancaster Airport Taxi offers a convenient and hassle-free way to get to and from the airport. You can book your ride in advance and have the driver pick you up at your desired location, making it easy to get to your flight on time.</p>
+<p class="anp">3. Reliability: When you book a ride with Ancaster Airport Taxi, you can count on reliable service. The company has a reputation for punctuality and will make sure you get to your destination on time.</p>
+<p class="anp" style="margin-bottom: 50px;">4. Comfort: Ancaster Airport Taxi offers a range of vehicles to choose from, including sedans and minivans, so you can find the appropriate option to suit your needs. You can travel in comfort and style, with plenty of space for your luggage.</p>
+<div class="animg">
+    <img src="{% static 'images/ancaster.jpg'%}" alt="ancaster image">
+</div>
+
+<h1 class="anh1b">EXPERIENCED AND PROFESSIONAL DRIVERS</h1>
+<p class="anp">Ancaster Airport Taxi hires professional drivers who are trained and licensed to operate their vehicles. They are knowledgeable about the area and can provide safe and efficient transportation to your destination.</p>
+<h1 class="anh1b" style="text-transform: uppercase;">Ancaster Airport is a location we serve</h1>
+
+<p class="anp">At our Ancaster airport limo service can pick you up and drop you off at any of the following airports: Pearson airport, Hamilton airport, Buffalo international airport New York state, Billy Bishop airport Toronto, and Waterloo airport. When a client needs a limo from Ancaster to the airport, Ancaster Airport Limo is available. They’ll become their go-to provider so they can travel without stress.</p>
+<h1 class="anh1" style="text-transform: uppercase;">Why to consider Ancaster taxi & limo service?</h1>
+<p class="anp" style="margin-bottom: 25px;">There are several reasons why you may want to consider using Ancaster Airport Taxi services:</p>
+
+<p class="anpl">1. <span style="font-weight: bold;">Save time:</span> By using a taxi service, you can avoid the stress and hassle of driving to the airport, finding parking, and unloading your luggage. With Ancaster Airport Taxi, you can simply book a ride and have a professional driver take you to your destination, allowing you to relax and save time.</p>
+<p class="anpl">2. <span style="font-weight: bold;">Convenience:</span> Ancaster Airport Taxi offers a convenient and hassle-free way to get to and from the airport. You can book your ride in advance and have the driver pick you up at your desired location, making it easy to get to your flight on time.</p>
+<p class="anpl">3. <span style="font-weight: bold;">Reliability:</span> When you book a ride with Ancaster Airport Taxi, you can count on reliable service. The company has a reputation for punctuality and will make sure you get to your destination on time.</p>
+<p class="anpl">4. <span style="font-weight: bold;">Comfort:</span> Ancaster Airport Taxi offers a range of vehicles to choose from, including sedans and minivans, so you can find the appropriate option to suit your needs. You can travel in comfort and style, with plenty of space for your luggage.</p>
+<p class="anpl">5. <span style="font-weight: bold;">Professional Chauffeur:</span> Ancaster Airport Taxi and Limo hires professional drivers and chauffeur who are trained and licensed to operate their vehicles. They are knowledgeable about the area and can provide safe and efficient transportation to your destination.</p>
+
+<p class="anp" style="margin-top: 20px;">At Ancaster <span style="color: #05d99c;"> Hamilton </span> airport limo service we will pick you up and drop you off at any of the following airports: Pearson airport, Hamilton airport, Buffalo international airport New York state, Billy Bishop airport Toronto, and Waterloo airport. When a client needs a limo from Ancaster to any airport, we become their go-to provider so they can travel without stress.</p>
+
+<h1 class="anh1s" style="text-transform: uppercase;">Services offered at Ancaster Airport Limo</h1>
+
+<ul class="ajsp" style="padding: 15px 0px;">
+    <li>Ancaster  Airport Limo and taxi</li>
+    <li>Ancaster  Mini van Limo and taxi</li>
+    <li>Ancaster  SUV limo and taxi</li>
+    <li>Ancaster  Airport limo and taxi drop-off</li>
+    <li>Ancaster airport limo and taxi pick-up</li>
+    <li> Ancaster airprot limo and  <span style="font-weight: bold;">with Car Seat</span></li>
+   
+</ul>
+
+<div class="calls" style="margin-top: 10px;">
+    <h1 class="callh1">RESERVE YOUR RIDE</h1>
+    <div class="nos">
+        <div class="no1">(647) 689-5848</div>
+        <div class="no2">1 800-260-8901</div>
+        <div class="no3">Online Booking</div>
+        <div class="no4">Booking By Email</div>
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script src="{% static 'script.js'%}"></script>
+{% endblock %}

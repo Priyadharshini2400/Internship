@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::selection{
+    background-color: #05d99c;
+    color: black;
+}
+.head-nia{
+    height: 320px;
+    width: 100%;
+    background-color: #05d99c;
+}
+.head-nia h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.head-nia p{
+    width: 80%;
+    margin-left: 200px;
+    line-height: 30px;
+    padding-right: 110px;
+    text-align: justify;
+    
+}
+.nia-pictures{
+    height: 670px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+   
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;  
+}
+
+.nia-pic{
+    height: 300px;
+    width: 550px;
+    background-color: white;
+    
+    
+}
+.nia-pic img{
+    height: 100%;
+    width: 100%;
+}
+.nfa{
+    color: #05d99c;
+    padding: 0px 190px;
+    font-size: 40px;
+}
+.pnfa{
+     padding: 13px 190px;
+     line-height: 30px;
+     
+    
+}
+
+.unifa li{
+    margin-left: 130px;
+    padding: 4px 0px;
+}
+
+
+/*media query*/
+
+@media (max-width: 768px){
+.head-nia{
+        height: auto;
+       
+}
+.head-nia h1{
+        font-size: 35px;
+}
+.head-nia p{
+        margin-left: 0;
+        padding-right: 0;
+        line-height: 30px;
+        width: 100%;
+        text-align: justify;
+        padding: 10px;
+    
+}
+.nia-pictures{
+     grid-template-columns: repeat(1,500px);
+     gap: 10px;
+     height: auto;
+}
+.nia-pic{
+    padding: 20px;
+     height: 300px;
+    width: 500px;
+
+}
+#nia-pic1{
+    margin-top: -20px;
+}
+.nfa{
+   padding: 0px 19px;
+    font-size: 30px; 
+}
+.pnfa{
+     padding: 20px 19px;
+     line-height: 30px;
+     
+    
+}
+.unifa li{
+    margin-left: -45px;
+    padding: 4px 0px;
+}
+
+.unifa{
+    padding-left: 10px;
+}
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .head-nia h1{
+        font-size: 35px;
+    }
+    .head-nia{
+        height: auto;
+       
+    }
+    #lnfa{
+      padding: 3px 5px;
+       line-height: 18px;
+
+}
+
+
+}

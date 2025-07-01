@@ -1,0 +1,127 @@
+.blogmain{
+    height: auto;
+    width: 100%;
+    display: flex;
+    
+}
+.blogside1{
+    width: 70%;
+    border-right: 2px solid #ccc;
+
+}
+.blogside2{
+    width: 30%;
+    
+}
+.blogform{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid #ccc;
+}
+.blogside1 img{
+    height: 500px;
+    width: 98%;
+}
+.blogh2{
+    color: #00d082;
+    padding: 25px 2px;
+}
+.blogf2,.blogf3{
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.blogf1{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.blogf3 label{
+    display: block;
+}
+.blogf2 label{
+    display: block;
+}
+.bp1{
+    padding: 25px;
+}
+.blogform input{
+    border: none;
+    outline: none;
+}
+.blogf2 input::placeholder{
+    font-size: 16px;
+}
+.blogf3 input::placeholder{
+    font-size: 16px;
+}
+.blogmp{
+    color: gray;
+    padding-left: 50px;
+}
+.bmpara{
+    padding: 20px 8px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+
+@media (max-width: 768px){
+    .blogmain{
+    flex-direction: column;
+    
+}
+.blogside1{
+    width: 100%;
+    border-right: none;
+   
+
+}
+.blogside1 img{
+    height: 300px;
+    width: 98%;
+}
+.blogform{
+    width: 80%;
+    height: auto;
+    
+    
+}
+.blogside2{
+    width: 100%;
+    
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+        .blogmain{
+    flex-direction: column;
+    
+}
+.blogside1{
+    width: 100%;
+    border-right: none;
+   
+
+}
+.blogside1 img{
+    height: 300px;
+    width: 98%;
+}
+.blogform{
+    width: 80%;
+    height: auto;
+    
+    
+}
+.blogside2{
+    width: 100%;
+    
+}
+
+}

@@ -1,0 +1,1388 @@
+
+
+<div class="page-wrapper">
+{% extends 'base.html' %}
+
+
+
+{% load static %}
+
+{% block content%}
+
+
+<div class="book">
+    <div class="book-no">
+        <div class="no"> <span class="one">1 800-2608901</span> | <span class="one">(647) 6895848</span></div>
+        <div class="book-icon">
+            <a href=""><i class="bi bi-facebook" id="ic"></i></a>
+            <a href=""><i class="bi bi-twitter" id="ic"></i></a>
+            <a href=""><i class="bi bi-instagram" id="ic" ></i></a>
+            <a href=""><i class="bi bi-linkedin" id="ic"></i></a>
+        </div>
+
+    </div>
+    <div class="booknow">
+        <div class="b-now">
+            BOOK NOW
+        </div>
+        <div class="ge">
+            GET QUOTE
+        </div>
+    </div>
+
+</div>
+
+<div class="head-ban">
+    <div class="hone">
+        <h1 class="PAT">Pearson airport taxi & toronto limo Service</h1>
+        <h2 class="PAT-SUB">Book or Call for Your Toronto Airport Limo & Taxi Service Online, 24/7</h2>
+
+    </div>
+  <form action="" method="POST">
+    <div class="f-booking">
+      
+        {%csrf_token%}
+      <div class="f-date">
+        <p>PICKUP DATE</p>
+        <input type="date" name="PickupDate" id="icon-input">
+      </div>
+      <div class="f-time">
+        <p>PICKUP TIME</p>
+        <input type="time" name="PickupTime" id="icon-input">
+      </div>
+      <div class="f-picloc">
+        <p>PICKUP LOCATION - <span style="text-decoration: underline;">USE MY LOCATION</span></p>
+        <i class="bi bi-geo-alt"><input type="text" id="f-place"  placeholder="Enter a Location" name="PickupLocation" id="icon-input"></i>
+
+      </div>
+      <div class="f-drop">
+        <p>DROP-OFF LOCATION</p>
+            <i class="bi bi-geo-alt"><input type="text" id="f-place" placeholder="Enter a Location" name="DropOff" id="icon-input"></i>
+
+      </div>
+      <div class="f-booknow">
+        <input type="submit" value="BOOK NOW" id="f-btn">
+      </div>
+   
+
+    </div>
+  </form>
+
+
+
+</div>
+
+
+
+<div class="calls">
+    <h1 class="callh1">Call to Reserve Your Toronto Pearson Airport Ride Today</h1>
+    <div class="nos">
+        <div class="no1">(647) 689-5848</div>
+        <div class="no2">1 800-260-8901</div>
+        <div class="no3">Online Booking</div>
+        <div class="no4">Booking By Email</div>
+
+    </div>
+    
+</div>
+<div class="twostep">
+    <div class="onestep">
+       <p> Pearson Toronto Airport Taxi & Toronto Limo Service - Step-by-Step Video to <br> Locate Your Pre-Arranged Ride.</p>
+
+    </div>
+    <div class="steptwo">
+       <p> Step-by-Step Guide: How to Arrange Pearson Toronto Airport Taxi & Limo Service - A Guided Video Tutorial.</p>
+
+    </div>
+</div>
+
+<div class="YT">
+    <div class="ifs">
+        <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/1ERZp5SsD_0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+
+    </div>
+    <div class="ifs">
+          <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/5D1330ZnNNk" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+</iframe>
+
+    </div>
+  
+   
+
+</div>
+
+<div class="review">
+   <div> <h2 >EXCELLENT</h2></div>
+    <div><img src="{% static 'images/f.svg'%}" alt="star" height="30px" width="30px">
+    <img src="{% static 'images/f.svg'%}" alt="star" height="30px" width="30px">
+    <img src="{% static 'images/f.svg'%}" alt="star" height="30px" width="30px">
+    <img src="{% static 'images/f.svg'%}" alt="star" height="30px" width="30px">
+    <img src="{% static 'images/f.svg'%}" alt="star" height="30px" width="30px"></div>
+    
+    <div><p>Based on <span style="font-weight: bold;">469 reviews</span></p></div>
+    <div><img src="{% static 'images/logo.svg'%}" alt="google" height="70px" width="120px"></div>
+</div>
+
+
+
+<!--google-->
+<div class="whole">
+  <div class="carousel-container">
+    <button id="prev-btn">&#10094;</button>
+    <div class="carousel-track">
+      <!-- Slide 1 -->
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#795548;">K</div>
+          <div>
+            <h4>Kaitlin Murray</h4>
+            <p class="date">2024-08-24</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>My driver was so kind and made sure I got to my event on time. Will use this service again!</p>
+      </div>
+
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#2196F3;">Y</div>
+          <div>
+            <h4>Yves Onana</h4>
+            <p class="date">2024-08-23</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Excellent driving, and very courteous and kind driver</p>
+      </div>
+
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#E64A19;">D</div>
+          <div>
+            <h4>D G</h4>
+            <p class="date">2024-08-19</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Great company! Honest people and super clean cars!</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#F57C00;">M</div>
+          <div>
+            <h4>MaryAnn Campanella</h4>
+            <p class="date">2024-08-13</p>
+          </div>
+        <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>The best service at the best price. Spotless cars and always on time.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#673AB7;">T</div>
+          <div>
+            <h4>Tim Stoenner</h4>
+            <p class="date">2024-08-13</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Great service, worked quickly to accommodate last minute travel changes!</p>
+      </div>
+
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#0097A7;">M</div>
+          <div>
+            <h4>Marium Shuja</h4>
+            <p class="date">2024-08-12</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Had great experience, will use the service again 👍👍👍</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#673AB7;">T</div>
+          <div>
+            <h4>Tim Stoenner</h4>
+            <p class="date">2024-08-13</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Great service, worked quickly to accommodate last minute travel changes!</p>
+      </div>
+
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#00796B;">M</div>
+          <div>
+            <h4>Marium Shuja</h4>
+            <p class="date">2024-08-12</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Had great experience, will use the service again 👍👍👍</p>
+      </div>
+
+      <div class="review-card">
+        <div class="top">
+          <div class="avatar" style="background:#03A9F4;">Dr</div>
+          <div>
+            <h4>Dr. A.A. J.</h4>
+            <p class="date">2024-08-10</p>
+          </div>
+          <img class="g-logo" src="{%static 'images/icon.svg' %}" height="18px" width="18px">
+        </div>
+        <div class="stars">★★★★★<span class="verified">✔</span></div>
+        <p>Very good service with a very affordable price</p>
+      </div>
+    </div>
+    <button id="next-btn">&#10095;</button>
+    </div>
+</div>
+
+
+<div class="online">
+  <div class="onlineh1">
+    <h1>How to Book Your Toronto Airport Taxi & Toronto Limo Service Online</h1>
+    <h2>3 Steps to Book Your Toronto Airport Taxi, Limo & Shuttle</h2>
+  </div>
+  
+
+  <div class="rdiv">
+  <div class="route">
+    <img src="{% static 'images/loc.png'%}" alt="loc" height="55px" width="60px">
+    <p style="padding: 20px; line-height: 28px; font-size: 20px;"><span style="font-weight: bold;">Choose route and days</span> <br>
+   Choose a route, date and time of your trip!</p>
+  </div>
+  <div class="car">
+    <img src="{% static 'images/car.png'%}" alt="car" height="55px" width="60px">
+    <p style="padding: 20px; line-height: 28px; font-size: 20px">
+     <span style="font-weight: bold;"> Choose a car and extras</span> <br>
+      Choose a car and additional services!
+
+    </p>
+  </div>
+  <div class="form">
+    <img src="{% static 'images/form.png'%}" alt="form" height="55px" width="60px">
+    <p style="padding: 20px; line-height: 28px; font-size: 20px"><span style="font-weight: bold;">Complete the booking form</span> <br> 
+      Fill in a simple booking form and go!
+</p>
+  </div>
+  </div>
+</div>
+
+
+<div class="tservice">
+    <div class="bg-image"></div>
+    <div class="tservice-content">
+      <h1 class="th1">Pearson Limo & Taxi Airport Transfer Service</h1>
+  <h3 class="th3"><span style="color: gray;">Pearson Limo and Taxi service</span> have been offered by us to and from various airports such as <span style="color: gray;">Hamilton International Airport (YHM)</span>, Toronto Pearson International Airport,<span style="color: gray;"> Billy Bishop Airport</span>, and <span style="color: gray;">Buffalo Niagara International Airport (BUF)</span> . We ensure on-time pickup and on-time drop off of our passengers at discounted rates to attract them. <span style="color: gray;">Toronto Taxi & Limo</span> offers discounted prices to our valuable passengers with a mission to provide affordable and cost-effective <span style="color: gray;">taxi</span>  services.</h3>
+
+    </div>
+  
+  <div class="fourdiv">
+    <div class="fdiv">
+      <img src="{%static 'images/plogo.webp'%}" alt="him" height="50px" width="250px">
+      <h3 class="fh3">Toronto Pearson Limo Service</h3>
+    </div>
+    <div class="fdiv">
+       <img src="{% static 'images/himg.jpeg'%}" alt="ha" height="130px" width="250px">
+      <h3 class="ch3">Hamilton Airport Limo Service</h3>
+    </div>
+    <div class="fdiv">
+       <img src="{% static 'images/Bimg.png'%}" alt="bb" height="130px" width="300px">
+      <h3 class="ch3">Billy Bishop Airport Limo Service</h3>
+    </div>
+    <div class="fdiv">
+       <img src="{% static 'images/buff.jpg'%}" alt="buff" height="130px" width="270px">
+      <h3 class="ch3">Buffalo Niagara Airport Limo Service</h3>
+    </div>
+  </div>
+
+  <div class="yyz">
+    <h1>(YYZ) Toronto Airport Taxi & Limo Fleet</h1>
+  </div>
+</div>
+
+<h1 class="limo" style="padding: 19px; text-align: center;">Select Sedan Options for Toronto Airport Taxi & Limo Services</h1>
+
+
+
+
+
+<!--Car slide-->
+
+<div class="carslide">
+  <div class="car1">
+   
+    
+    <img src="{% static 'images/c1.webp'%}" alt="c1">
+     <div class="carhead">
+
+       <h1 class="carh1">NO PREFERENCS</h1>
+       <h3 class="carh3">Accommodates up to 3 passengers and 1-2 medium-sized pieces of luggage.When you choose no preference any of our such as sedan, minivan, luxury sedan, or SUV can arrive to pick you up</h3>
+
+    </div>
+    
+     
+   
+
+   
+  </div>
+  <div class="car2">
+    <img src="{% static 'images/c2.webp'%}" alt="">
+     <div class="carhead">
+
+       <h1 class="carh1">Premium Luxury Sedan</h1>
+       <h3 class="carh3">Accommodates up to 4 passengers and 1-3 medium-sized pieces of luggage. Our Premium fleet of cars available to or from Pearson Airport. Our fleet includes the following models: Lexus, Cadillac, Chrysler, GMC, Chevrolet, Mercedes</h3>
+
+    </div>
+  </div>
+  <div class="car3">
+    <img src="{% static 'images/c3.webp'%}" alt="">
+     <div class="carhead">
+
+       <h1 class="carh1">Premium Luxury Sedan</h1>
+       <h3 class="carh3">Accommodates up to 4 passengers and 1-3 medium-sized pieces of luggage.We provide best Luxury sedan limo and taxi service to our clients.Our fleet includes these models:Toyota highlander, Tesla, GMC, Chevrolet, Cadillac</h3>
+
+    </div>
+  </div>
+</div>
+
+<h1 class="limo" style="padding: 19px; text-align: center;">SUV Options: 6-Passenger & 7-Seater for Toronto Airport Taxi & Limo</h1>
+
+
+
+
+    
+     
+   
+<!--car2slide-->
+<div class="carslide">
+  <div class="car1">
+   
+    
+    <img src="{% static 'images/ca1.webp'%}" alt="c1">
+     <div class="carhead">
+
+       <h1 class="carh1">Full Size SUV 6 Seater</h1>
+       <h3 class="carh3">Accommodates up to 6 passengers and 1-5 medium-sized pieces of luggage. Equipped with  Leather Heated seats, GPS system, radio communication. List of vehicles in SUV fleet:GMC Yukon XL, Cadillac , escalade, Lincoln Navigator, Ford expedition </h3>
+
+    </div>
+    
+     
+   
+
+   
+  </div>
+  <div class="car2">
+    <img src="{% static 'images/ca2.webp'%}" alt="">
+     <div class="carhead">
+
+       <h1 class="carh1">Full Size SUV 6 Seater</h1>
+       <h3 class="carh3">Accommodates up to 7 passengers and 1-5 medium-sized pieces of luggage. Equipped with  Leather Heated seats, GPS system, radio communication. List of vehicles in SUV fleet: GMC Yukon XL, Cadillac , escalade, Lincoln Navigator, Ford expedition</h3>
+
+    </div>
+  </div>
+  <div class="car3">
+    <img src="{% static 'images/ca3.webp'%}" alt="">
+     <div class="carhead">
+
+       <h1 class="carh1">Full Size Premium Luxury SUV</h1>
+       <h3 class="carh3">Accommodates  6 or 7  passengers with 5 bags and 2 cabin bags.  List of vehicles in SUV fleet: GMC Yukon XL, Lincoln Navigator, Ford Expedition </h3>
+
+    </div>
+  </div>
+</div>
+   
+
+<h1 class="limo" style="padding: 19px; text-align: center;">Stretch limousines & Mini-Vans</h1>
+
+
+<div class="carslide">
+  <div class="car1">
+   
+    
+    <img src="{% static 'images/cc1.webp'%}" alt="c1">
+     <div class="carhead">
+
+       <h1 class="carh1">Stretch Limo</h1>
+       <h3 class="carh3">We offer stretch limo service for events such as corporate parties, birthdays, anniversaries and wedding. We offer various options as per the clients wants and needs. List of Limousines fleet: Ford, Hummer, Lincoln town car, Chrysler </h3>
+
+    </div>
+    
+     
+   
+
+   
+  </div>
+  <div class="car2">
+    <img src="{% static 'images/cc2.webp'%}" alt="">
+     <div class="carhead">
+
+       <h1 class="carh1">Mini-Van</h1>
+       <h3 class="carh3">Our  6 seater Mini Van’s Limo and taxi  from or to Pearson Toronto airport.
+
+We offer 6 seats option to travelers with extra luggage. In Mini van we offer  5 bags and 2 cabin bags. List of vehicles in mini van fleet: Toyota sienna, Dodge Caravan, Honda Odyssey</h3>
+
+    </div>
+  </div>
+  <div class="car3">
+    <img src="{% static 'images/cc3.webp'%}" alt="">
+     <div class="carhead">
+
+       <h1 class="carh1">Sprinter Van</h1>
+       <h3 class="carh3">We offer 14 seats option to travelers with extra luggage or number of passengers so they can travel to the airport in one vehicle. In sprinter van we offer  15 bags and 5 cabin bags.
+
+List of vehicles in Sprinter van fleet: Mercedes sprinter, Ford Mini Bus </h3>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!---flat-->
+<div class="flat">
+  <img src="{%static 'images/flat.jpg'%}" alt="">
+</div>
+
+<div class="airport_travel">
+  <div class="choice">
+    
+     <span class="ch1"></span><h1>Why We Should Be Your First Choice for airport Travel?</h1><span class="ch2"></span>
+  </div>
+  <div class="fleet">
+    
+   <div class="d1">
+    <i class="bi bi-clock" style="color: rgba(255, 105, 0, 1); font-weight: bold; font-size: 60px;"></i>
+    <h1 style="padding: 10px; color: rgba(255, 105, 0, 1); margin-top: 20px;">Perfection Anytime</h1>
+    <p style="text-align: center; line-height: 28px;">Our team of highly trained drivers ensures you arrive safely and on time at your destination, providing a secure, uninterrupted journey.</p>
+   </div>
+
+
+
+   <div class="d2">
+
+     <i class="bi bi-car-front-fill" style="color: rgba(255, 105, 0, 1); font-weight: bold; font-size: 60px;"></i>
+    <h1 style="padding: 10px; color: rgba(255, 105, 0, 1); margin-top: 20px;">Our Fleet</h1>
+    <p style="text-align: center; line-height: 28px;">Our vehicles are spacious, our drivers are experienced and professional.Our vehicles are thoroughly cleaned and sanitized every night.</p>
+   </div>
+
+
+
+
+   <div class="d3">
+    
+     <i class="bi bi-check-circle" style="color: rgba(255, 105, 0, 1); font-weight: bold; font-size: 60px; margin: 0 auto;"></i>
+    <h1 style="padding: 10px; color: rgba(255, 105, 0, 1); margin-top: 20px; text-align: center;">Fast and Reliable</h1>
+    <p style="text-align: center; line-height: 28px;">We provide airport transportation with a focus on safety, on-time performance and courteous behavior. Toronto Taxi Limo offers luxury black car service at affordable rates.</p>
+   </div>
+   <div class="d4">
+
+     <i class="bi bi-person-fill-check" style="color: rgba(255, 105, 0, 1); font-weight: bold; font-size: 70px; text-align: center;"></i>
+    <h1 style="padding: 10px; color: rgba(255, 105, 0, 1); margin-top: 20px; text-align: center;">Customer service</h1>
+    <p style="text-align: center; line-height: 28px;">We are committed to provide excellence in superior customer service. We will always strive to deliver service with a smile and keep customers happy.</p>
+
+    
+   </div>
+   <div class="d5">
+     <i class="bi bi-chat-dots-fill" style="color: rgba(255, 105, 0, 1); font-weight: bold; font-size: 70px; text-align: center;"></i>
+    <h1 style="padding: 10px; color: rgba(255, 105, 0, 1); margin-top: 20px; text-align: center;">Support & Communication</h1>
+    <p style="text-align: center; line-height: 28px;">No matter what your destination may be, we are committed to providing you with our signature level of comfort, attention, and care.</p>
+   </div>
+   <div class="d6">
+     <i class="bi bi-currency-dollar" style="color: rgba(255, 105, 0, 1); font-weight: bold; font-size: 70px; text-align: center;"></i>
+    <h1 style="padding: 10px; color: rgba(255, 105, 0, 1); margin-top: 20px; text-align: center;">Save Time & Money</h1>
+    <p style="text-align: center; line-height: 28px;">Toronto Taxi and Limo provides a safe journey to all its customers by offering discounted flat prices, our prices will not change even on the high traffic roads and the price of the cabs does not depend on the distance you are traveling.</p>
+   </div>
+    
+  </div>
+</div>
+
+
+<div class="men">
+  <h1>Serving With Care</h1>
+  <h1>We specialize in airport limo service within the <span style="color: gray;text-decoration: underline;">GTA</span>
+    </h1>
+
+  <div class="men-feed">
+    <div class="feed1">
+      <p>
+        I am a very frequent traveler from Toronto airport. I find your service excellent and a great. The taxi service to Toronto Pearson airport was amazing. I always use www.TorontotaxiLimo.ca, they have the most reliable service that I’ve found anywhere. I highly recommend you try them, I am sure after you do it might be nice to give a testimonial too.
+      </p>
+      
+      <div class="ds">
+        <img src="{% static 'images/empty.jpg'%}" alt="">
+        <h4>Mark James<br><span style="font-weight: lighter;">Designer</span></h4></span>
+        
+      </div>
+      <div class="stars1">★★★★★</div>
+      
+    </div>
+    <div class="feed2">
+
+       <p>
+       I am from Toronto my travel to airport and union station is very often and I always use www.torontotaxilimo.ca service because the cars and drivers are very well groomed they are very professional I am using them from last 11 years highly recommended
+      </p>
+      
+      <div class="ds">
+        <img src="{% static 'images/empty.jpg'%}" alt="">
+        <h4>Henry Smith<br><span style="font-weight: lighter;">Designer</span></h4></span>
+    </div>
+    <div class="stars2">★★★★★</div>
+    </div>
+
+    <div class="feed3">
+
+
+      <p>
+       The quality of a good business is how they treat their customers when costumer need your service. I booked an airport pickup for a family vacation online and called a few minutes before the scheduled time to confirm the pickup and they said they were on their way. When the arranged time came and went we started to panic. I called and was told the driver got his vehicles tire flat; however, they had another driver dispatched. They arrived within 15 mins of my call and even upgraded our transport at no extra cost. Will recommend www.torontotaxilimo.ca
+      </p>
+      
+      <div class="ds">
+        <img src="{% static 'images/empty.jpg'%}" alt="">
+        <h4>	
+Elizabeth Goldberg<br><span style="font-weight: lighter;">Architect</span></h4></span>
+    </div>
+    <div class="stars3">★★★★★</div>
+    
+  </div>
+    
+</div>
+</div>
+
+<div class="calls">
+    <h1 class="callh1">RESERVE YOUR RIDE</h1>
+    <div class="nos">
+        <div class="no1">(647) 689-5848</div>
+        <div class="no2">1 800-260-8901</div>
+        <div class="no3">Online Booking</div>
+        <div class="no4">Booking By Email</div>
+
+    </div>
+    
+</div>
+
+<div class="maingta">
+<div class="gta">
+  <h1 style="padding: 15px; text-align: center;letter-spacing: 1px;">Explore the Ease of Travel with Pearson Toronto Airport Taxi <br> and Limo Services</h1>
+  <h1 style="padding:  10px; color: #28cfbc; text-align: center; letter-spacing: 1.5px; margin-bottom: 40px; margin-top: 20px;">Seamless Travel to Beautiful Destinations Beyond the GTA</h1>
+  <h2>Pearson Airport Taxi and Pearson Airport Limousine Services proudly extend their premier transportation options beyond the Greater Toronto Area (GTA), reaching some of Ontario’s most scenic and serene locations. Whether you’re planning a peaceful getaway, an outdoor adventure, or a visit to a quaint village, we ensure that your journey is as remarkable as the destination. Below are the flat rates from Toronto Pearson Airport to some of the most popular regions and towns. With our transparent pricing and luxurious vehicles, you can travel in comfort and style, knowing that there are no hidden costs.</h2>
+
+  <div class="gtap">
+    <img src="{% static 'images/men2.jpg'%}" alt="mn" class="mn">
+   
+    <h1>Flat Rate Fares from Pearson Airport
+Popular Destinations and Flat Rates</h2>
+     <img src="{% static 'images/men1.jpg'%}" alt="mn" class="mn">
+    
+  </div>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1>Muskoka Region</h1>
+  <p><span style="font-weight: bolder;">Gravenhurst (155 km): </span>Sedan: $271.25 CAD | Van: $281.25 CAD | SUV: $291.25 CAD</p>
+  <p> <span style="font-weight: bolder;">Huntsville (215 km):</span> Sedan: $376.25 CAD | Van: $386.25 CAD | SUV: $396.25 CAD</p>
+  <p><span style="font-weight: bolder;">Bracebridge (180 km):</span> Sedan: $315 CAD | Van: $325 CAD | SUV: $335 CAD</p>
+  <p><span style="font-weight: bolder;">Port Carling (170 km):</span> Sedan: $297.50 CAD | Van: $307.50 CAD | SUV: $317.50 CAD</p>
+  <p><span style="font-weight: bolder;">Bala (165 km): </span>Sedan: $288.75 CAD | Van: $298.75 CAD | SUV: $308.75 CAD</p>
+</div>
+
+</div>
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1 style="margin-top: 30px;">Parry Sound District</h1>
+  <p><span style="font-weight: bolder;">Parry Sound (225 km): </span> Sedan: $393.75 CAD | Van: $403.75 CAD | SUV: $413.75 CAD</p>
+  <p> <span style="font-weight: bolder;">Pointe au Baril (250 km):</span>Sedan: $437.50 CAD | Van: $447.50 CAD | SUV: $457.50 CAD</p>
+  <p><span style="font-weight: bolder;">Rosseau (195 km): </span>  Sedan: $341.25 CAD | Van: $351.25 CAD | SUV: $361.25 CAD</p>
+  <p><span style="font-weight: bolder;">Dunchurch (275 km): </span> Sedan: $481.25 CAD | Van: $491.25 CAD | SUV: $501.25 CAD
+
+</p>
+</div>
+
+</div>
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1 style="margin-top: 30px;">Kawartha Lakes</h1>
+  <p><span style="font-weight: bolder;">Bobcaygeon (160 km):</span> Sedan: $280 CAD | Van: $290 CAD | SUV: $300 CAD</p>
+  <p> <span style="font-weight: bolder;">Fenelon Falls (150 km): </span>Sedan: $262.50 CAD | Van: $272.50 CAD | SUV: $282.50 CAD</p>
+  <p><span style="font-weight: bolder;">Coboconk (140 km): </span>  Sedan: $245 CAD | Van: $255 CAD | SUV: $265 CAD</p>
+  <p><span style="font-weight: bolder;">Buckhorn (170 km):  </span> Sedan: $297.50 CAD | Van: $307.50 CAD | SUV: $317.50 CAD
+
+</p>
+</div>
+
+</div>
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1 style="margin-top: 30px;">Haliburton Highlands</h1>
+  <p><span style="font-weight: bolder;">Haliburton (220 km): </span> Sedan: $385 CAD | Van: $395 CAD | SUV: $405 CAD</p>
+  <p> <span style="font-weight: bolder;">Minden (200 km): </span> Sedan: $350 CAD | Van: $360 CAD | SUV: $370 CAD</p>
+  <p><span style="font-weight: bolder;">Dorset (195 km):  </span>Sedan: $341.25 CAD | Van: $351.25 CAD | SUV: $361.25 CAD</p>
+  <p><span style="font-weight: bolder;">Carnarvon (205 km):  </span> Sedan: $358.75 CAD | Van: $368.75 CAD | SUV: $378.75 CAD
+
+</p>
+</div>
+
+</div>
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1 style="margin-top: 30px;">Georgian Bay</h1>
+  <p><span style="font-weight: bolder;">Penetanguishene (150 km): </span> Sedan: $262.50 CAD | Van: $272.50 CAD | SUV: $282.50 CAD</p>
+  <p> <span style="font-weight: bolder;">Midland (145 km):</span>  Sedan: $253.75 CAD | Van: $263.75 CAD | SUV: $273.75 CAD</p>
+  <p><span style="font-weight: bolder;">Honey Harbour (160 km):  </span> Sedan: $280 CAD | Van: $290 CAD | SUV: $300 CAD</p>
+  <p><span style="font-weight: bolder;">Port Severn (150 km): </span>  Sedan: $262.50 CAD | Van: $272.50 CAD | SUV: $282.50 CAD
+
+</p>
+</div>
+
+</div>
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1 style="margin-top: 30px;">Lake Nipissing</h1>
+  <p><span style="font-weight: bolder;">North Bay (350 km):</span> Sedan: $612.50 CAD | Van: $622.50 CAD | SUV: $632.50 CAD</p>
+  <p> <span style="font-weight: bolder;">Callander (340 km):</span> Sedan: $595 CAD | Van: $605 CAD | SUV: $615 CAD</p>
+  <p><span style="font-weight: bolder;">Sturgeon Falls (370 km):   </span>Sedan: $647.50 CAD | Van: $657.50 CAD | SUV: $667.50 CAD</p>
+
+</p>
+</div>
+
+</div>
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1>Algoma Country</h1>
+  <p><span style="font-weight: bolder;">Sault Ste. Marie (700 km):</span> Sedan: $1,225 CAD | Van: $1,235 CAD | SUV: $1,245 CAD</p>
+  <p> <span style="font-weight: bolder;">Thessalon (625 km):</span> Sedan: $1,093.75 CAD | Van: $1,103.75 CAD | SUV: $1,113.75 CAD</p>
+  <p><span style="font-weight: bolder;">Blind River (600 km):   </span>Sedan: $1,050 CAD | Van: $1,060 CAD | SUV: $1,070 CAD</p>
+  <p><span style="font-weight: bolder;">Bruce Mines (585 km):  </span>Sedan: $1,023.75 CAD | Van: $1,033.75 CAD | SUV: $1,043.75 CAD</p>
+
+
+</p>
+</div>
+
+</div>
+
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1>Temagami Region</h1>
+  <p><span style="font-weight: bolder;">Temagami (500 km): </span>  Sedan: $875 CAD | Van: $885 CAD | SUV: $895 CAD</p>
+  <p> <span style="font-weight: bolder;">Elk Lake (525 km):</span>  Sedan: $918.75 CAD | Van: $928.75 CAD | SUV: $938.75 CAD</p>
+  <p><span style="font-weight: bolder;">Marten River (480 km):   </span>Sedan: $840 CAD | Van: $850 CAD | SUV: $860 CAD</p>
+  
+
+
+</p>
+</div>
+
+</div>
+
+
+
+
+<div class="Mblue">
+  <div class="Dblue">
+  <h1>Manitoulin Island</h1>
+  <p><span style="font-weight: bolder;">Little Current (600 km):</span> Sedan: $1,050 CAD | Van: $1,060 CAD | SUV: $1,070 CAD</p>
+  <p> <span style="font-weight: bolder;">Gore Bay (650 km):</span>  Sedan: $1,137.50 CAD | Van: $1,147.50 CAD | SUV: $1,157.50 CAD</p>
+  <p><span style="font-weight: bolder;">South Baymouth (680 km):  </span>Sedan: $1,190 CAD | Van: $1,200 CAD | SUV: $1,210 CAD</p>
+   <p><span style="font-weight: bolder;">Providence Bay (670 km):  </span>Sedan: $1,172.50 CAD | Van: $1,182.50 CAD | SUV: $1,192.50 CAD</p>
+  
+
+
+</p>
+</div>
+
+</div>
+
+
+
+
+<div class="dividedtwo">
+  <div class="divided1">
+    <div class="Dblue">
+  <h1 id="dh1">Mississauga, Ontario - 10 km, 15 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $30 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $40 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$50 CAD</p>
+  
+</p>
+
+
+
+ 
+  <h1 id="dh1">Brampton, Ontario - 18 km, 20 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $40 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $50 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$60 CAD</p>
+  
+</p>
+
+
+ 
+  <h1 id="dh1">Oakville, Ontario - 33 km, 30 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  Oakville Flat Rate $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $75 CAD</p>
+  
+</p>
+
+
+
+
+  <h1 id="dh1">Burlington, Ontario - 50 km, 45 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $60 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $70 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $80 CAD</p>
+  
+</p>
+
+
+
+
+  <h1 id="dh1">Hamilton, Ontario - 70 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $85 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> Hamilton Airport Transfer $95 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $105 CAD</p>
+  
+</p>
+
+
+
+
+  <h1 id="dh1">Milton, Ontario - 45 km, 40 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $70 CAD/p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $80 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $90 CAD</p>
+  
+</p>
+
+
+
+
+
+  <h1 id="dh1">Vaughan, Ontario - 20 km, 25 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $75 CAD</p>
+  
+</p>
+
+
+  <h1 id="dh1">Markham, Ontario - 27 km, 30 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $75 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Richmond Hill, Ontario - 31 km, 35 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $75 CAD</p>
+  
+</p>
+<h1 id="dh1">Toronto, Ontario - 27 km, 30 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  Toronto Pearson Airport Transfer $53 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $63 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$73 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Ajax, Ontario - 60 km, 50 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $85 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$95 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $105 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Pickering, Ontario - 66 km, 55 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $85 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$95 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $105 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Whitby, Ontario - 76 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $100 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$110 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $120 CAD</p>
+  
+</p>
+<h1 id="dh1">Oshawa, Ontario - 80 km, 1 hour 5 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $110 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$120 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $130 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Bowmanville, Ontario - 93 km, 1 hour 15 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $120 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$130 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $140 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Newmarket, Ontario - 51 km, 45 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $130 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$140 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $150 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Aurora, Ontario - 59 km, 50 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $140 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$150 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $160 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Georgina, Ontario - 105 km, 1 hour 20 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $165 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $175 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>  $185 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Bradford West Gwillimbury, Ontario - 75 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $170 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $180 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>  $190 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Barrie, Ontario - 95 km, 1 hour 10 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $175 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$185 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>  $195 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Innisfil, Ontario - 85 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $175 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$185 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>  $195 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Orangeville, Ontario - 80 km, 1 hour 10 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $110 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>$120 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>  $130 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Caledon, Ontario - 75 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> Caledon Flat Rate $120 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $130 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $140 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Bolton, Ontario - 48 km, 45 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $85 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $95 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $105 CAD</p>
+  
+</p>
+
+<h1 id="dh1">King City, Ontario - 30 km, 35 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $75 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $85 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $95 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Lindsay, Ontario - 115 km, 1 hour 25 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> Peterborough Flat Rate $160 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $170 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $180 CAD</p>
+  
+</p>
+<h1 id="dh1">Peterborough, Ontario - 135 km, 1 hour 40 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $145 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $155 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $165 CAD</p>
+  
+</p>
+<h1 id="dh1">Kawartha Lakes, Ontario - 155 km, 1 hour 55 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $170 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $180 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span> $190 CAD</p>
+  
+</p>
+
+</div>
+
+  </div>
+
+
+
+  <div class="divided2">
+    <div class="Dblue">
+  <h1 id="dh1">Clarington, Ontario - 130 km, 1 hour 35 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $175 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>   $185 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare:  </span> $195 CAD</p>
+  
+  
+
+
+</p>
+
+ 
+  <h1 id="dh1">Port Hope, Ontario - 145 km, 1 hour 45 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $180 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $190 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$200 CAD</p>
+  
+</p>
+
+
+
+
+ 
+  <h1 id="dh1">Cobourg, Ontario - 160 km, 2 hours</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $190 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $200 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$210 CAD</p>
+  
+</p>
+
+
+
+
+
+  <h1 id="dh1">Trent Hills, Ontario - 175 km, 2 hours 10 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $200 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $210 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$220 CAD</p>
+  
+</p>
+
+
+
+
+  <h1 id="dh1">Belleville, Ontario - 200 km, 2 hours 25 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $230 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $240 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$250 CAD</p>
+  
+</p>
+
+
+
+  <h1 id="dh1">Quinte West, Ontario - 220 km, 2 hours 40 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $240 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $250 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$260 CAD</p>
+  
+</p>
+
+
+
+  <h1 id="dh1">Brighton, Ontario - 240 km, 2 hours 55 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $260 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $270 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$280 CAD</p>
+  
+</p>
+
+
+  <h1 id="dh1">Kingston, Ontario - 260 km, 3 hours</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> Kingston Flat Rate $260 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>   $270 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$280 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Greater Napanee, Ontario - 280 km, 3 hours 15 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $270 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $280 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$290 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Prince Edward County, Ontario - 300 km, 3 hours 30 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $290 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span> $300 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$310 CAD</p>
+  
+</p>
+
+<h1 id="dh1">North Dumfries, Ontario - 100 km, 1 hour 15 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $130 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $140 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$150 CAD</p>
+  
+</p>
+
+
+<h1 id="dh1">Cambridge, Ontario - 80 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>Cambridge Flat Rate $110 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $120 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$130 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Kitchener, Ontario - 90 km, 1 hour 10 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>$120 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $130 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$140 CAD/p>
+  
+</p>
+
+
+
+<h1 id="dh1">Waterloo, Ontario - 100 km, 1 hour 20 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>$130 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $140 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$150 CAD/p>
+  
+</p>
+
+<h1 id="dh1">Guelph, Ontario - 80 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>$110 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $120 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$130 CAD/p>
+  
+</p>
+
+<h1 id="dh1">Erin, Ontario - 70 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $100 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $110 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$120 CAD/p>
+  
+</p>
+
+
+<h1 id="dh1">Shelburne, Ontario - 90 km, 1 hour 10 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $120 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $130 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$140 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Caledon, Ontario - 60 km, 50 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $85 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $95 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$105 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Bolton, Ontario - 40 km, 35 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $65 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $75 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$85 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Toronto Islands, Ontario - 36 km, 35 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $80 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $90 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$100 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Vaughan, Ontario - 20 km, 25 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$75 CAD</p>
+  
+</p>
+<h1 id="dh1">Erin, Ontario - 70 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span> $100 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $110 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$120 CAD/p>
+  
+</p>
+
+<h1 id="dh1">Richmond Hill, Ontario - 31 km, 35 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>  $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$75 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Markham, Ontario - 27 km, 30 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $55 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $65 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$75 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Whitchurch-Stouffville, Ontario - 45 km, 40 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $65 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $75 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$85 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Uxbridge, Ontario - 60 km, 50 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $75 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $85 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$95 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Scugog, Ontario - 80 km, 1 hour</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $95 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $105 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$115 CAD</p>
+  
+</p>
+
+<h1 id="dh1">Port Perry, Ontario - 86 km, 1 hour 5 minutes</h1>
+  <p id="dp"><span style="font-weight: bolder;">Sedan Flat Rate Fare:</span>   $105 CAD</p>
+  <p id="dp"> <span style="font-weight: bolder;">Van Flat Rate Fare: </span>  $115 CAD</p>
+  <p id="dp"><span style="font-weight: bolder;">SUV Flat Rate Fare: </span>$125 CAD</p>
+  
+</p>
+
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="serve" style="padding-bottom: 110px;">
+  <h1 style="color:#00d082; font-size: 40px;" >Airports We Serve</h1>
+  <h3 ><span style="font-weight: bolder;">Toronto Pearson International Airport (YYZ)</span></h3>
+  <h3>As a leading transportation provider, we specialize in offering airport pick-up and drop-off services at Toronto Pearson Airport, <br>the busiest airport in Canada.</h3>
+  <h3 ><span style="font-weight: bolder;">Billy Bishop Toronto City Airport (YTZ)</span></h3>
+  <h3>Our services extend to Billy Bishop Airport, conveniently connecting you to the heart of Toronto.</h3>
+  <h3 ><span style="font-weight: bolder;">John C. Munro Hamilton International Airport (YHM)</span></h3>
+  <h3>Traveling to or from Hamilton? Our taxis and limos are at your service for efficient airport transportation.</h3>
+  <h3 ><span style="font-weight: bolder;">Buffalo Niagara International Airport (BUF)</span></h3>
+  <h3>If you’re heading to Buffalo, New York, our transportation services ensure a smooth cross-border journey.</h3>
+  <h3 ><span style="font-weight: bolder;">Niagara Falls International Airport (IAG)</span></h3>
+  <h3>Explore Niagara Falls and the surrounding areas with our reliable transportation to Niagara Falls International Airport.</h3>
+  <h3 ><span style="font-weight: bolder;">Region of Waterloo International Airport (YKF)</span></h3>
+  <h3>For travelers in Waterloo and the surrounding region, we offer convenient airport transportation solutions.</h3>
+  <br><br>
+  <h3>Experience the luxury and convenience of traveling with Pearson Airport Taxi and Pearson Airport Limousine. Let us make your <br>journey just as memorable as your destination.</h3>
+
+
+</div>
+
+
+<div class="Limousine">
+  <div class="limotag">
+    <h1>Pearson Airport Taxi & Limousine Services</h1>
+  <h3>Pearson Airport Taxi and Pearson Airport Limousine Services are your trusted partners for premium transportation from all major airports in Ontario to numerous cities across New York State, Quebec, Pennsylvania, and Michigan. We pride ourselves on delivering a seamless, comfortable, and reliable cross-border travel experience, ensuring that you reach your destination in style and on time.</h3>
+<br><br>
+<h2>Cross-Border and Out-of-Ontario Services:</h2>
+  </div>
+  
+</div>
+
+
+
+
+
+<div class="Mred">
+
+
+  <div class="Dred">
+    <h1 class="hred">New York State <br>Buffalo - 160 km</h1>
+    <h4 class="h3red">Experience a stress-free journey to Buffalo, where Pearson Airport Taxi ensures a swift and comfortable ride, whether you're visiting Niagara Falls or exploring the rich history of this vibrant city.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $280 CAD | Van: $312 CAD | SUV: $320 CAD</h4><br><br>
+  
+
+    <h1 class="hred">Rochester - 300 km</h1>
+    <h4 class="h3red">Reach Rochester with ease and enjoy the scenic drive with our limousine service, perfect for both business and leisure trips, offering you a luxurious experience from start to finish.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $525 CAD | Van: $585 CAD | SUV: $600 CAD</h4><br><br>
+
+
+    <h1 class="hred">Syracuse - 400 km</h1>
+    <h4 class="h3red">Our service to Syracuse guarantees a smooth and pleasant ride, ideal for those traveling to this educational and cultural hub in Central New York.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $700 CAD | Van: $780 CAD | SUV: $800 CAD</h4><br><br>
+
+
+    <h1 class="hred">Albany - 530 km</h1>
+    <h4 class="h3red">Discover the charm of New York's capital with our premium transportation service, ensuring you arrive in Albany relaxed and ready to explore the city's rich history and architecture</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $927.50 CAD | Van: $1,033.50 CAD | SUV: $1,060 CAD</h4><br><br>
+
+
+     <h1 class="hred">New York City - 800 km</h1>
+    <h4 class="h3red">Travel to the heart of the Big Apple in ultimate comfort with our luxurious limousine service, perfect for making a grand entrance into the city that never sleeps.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,400 CAD | Van: $1,560 CAD | SUV: $1,600 CAD</h4><br><br>
+
+
+
+     <h1 class="hred">Michigan <br>Detroit - 370 km</h1>
+    <h4 class="h3red">Our service to Detroit ensures a smooth and luxurious journey, perfect for business travelers heading to the Motor City or families exploring its cultural attractions.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $647.50 CAD | Van: $721.50 CAD | SUV: $740 CAD</h4><br><br>
+
+
+    <h1 class="hred">Ann Arbor - 400 km</h1>
+    <h4 class="h3red">Travel in comfort to Ann Arbor, where our service ensures you arrive relaxed and ready to explore this lively university town.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $700 CAD | Van: $780 CAD | SUV: $800 CAD</h4><br><br>
+
+
+     <h1 class="hred">Grand Rapids - 650 km</h1>
+    <h4 class="h3red">Arrive in Grand Rapids in style, with our luxurious service offering you the best in comfort and convenience on your journey.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,137.50 CAD | Van: $1,267.50 CAD | SUV: $1,300 CAD</h4><br><br>
+
+
+      <h1 class="hred">Grand Rapids - 650 km</h1>
+    <h4 class="h3red">Arrive in Grand Rapids in style, with our luxurious service offering you the best in comfort and convenience on your journey.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,137.50 CAD | Van: $1,267.50 CAD | SUV: $1,300 CAD</h4><br><br>
+
+    <h1 class="hred">Lansing - 500 km</h1>
+    <h4 class="h3red">Our Lansing service ensures a seamless travel experience, ideal for business or leisure trips to Michigan's capital city.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $875 CAD | Van: $975 CAD | SUV: $1,000 CAD</h4><br><br>
+
+
+     <h1 class="hred">Kalamazoo - 550 km</h1>
+    <h4 class="h3red">Enjoy a smooth and pleasant ride to Kalamazoo with our service, perfect for those looking for comfort and reliability on their journey.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $962.50 CAD | Van: $1,072.50 CAD | SUV: $1,100 CAD</h4><br><br>
+
+
+    <h1 class="hred">Quebec <br> Montreal - 550 km</h1>
+    <h4 class="h3red">Our service to Montreal offers you the perfect blend of luxury and efficiency, making your journey as enjoyable as your destination in this vibrant and diverse city.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $962.50 CAD | Van: $1,072.50 CAD | SUV: $1,100 CAD</h4><br><br>
+
+    <h1 class="hred">Quebec City - 800 km</h1>
+    <h4 class="h3red">Arrive in Quebec City with grace and style, as our limousine service ensures a memorable and comfortable journey to this iconic historic city.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,400 CAD | Van: $1,560 CAD | SUV: $1,600 CAD</h4><br><br>
+
+
+      <h1 class="hred">Sherbrooke - 650 km</h1>
+    <h4 class="h3red">Take advantage of our smooth and stress-free transportation to Sherbrooke, perfect for travelers looking to experience the charm of Quebec's Eastern Townships.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,137.50 CAD | Van: $1,267.50 CAD | SUV: $1,300 CAD</h4><br><br>
+
+
+    <h1 class="hred">Trois-Rivières - 600 km</h1>
+    <h4 class="h3red">Enjoy a seamless ride to Trois-Rivières, where our professional drivers will take care of your every need, allowing you to relax and enjoy the journey.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,050 CAD | Van: $1,170 CAD | SUV: $1,200 CAD</h4><br><br>
+
+
+    
+    <h1 class="hred">Gatineau - 450 km</h1>
+    <h4 class="h3red">Let us drive you to Gatineau with comfort and style, providing a convenient link to Canada's capital region while you sit back and enjoy the ride.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $787.50 CAD | Van: $877.50 CAD | SUV: $900 CAD</h4><br><br>
+
+
+    <h1 class="hred">Pennsylvania Philadelphia - 850 km</h1>
+    <h4 class="h3red">Our Philadelphia service offers a luxurious and comfortable ride, perfect for those who need to travel to this historic city, whether for business or pleasure.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,487.50 CAD | Van: $1,657.50 CAD | SUV: $1,700 CAD</h4><br><br>
+
+
+    <h1 class="hred">Pittsburgh - 620 km</h1>
+    <h4 class="h3red">Experience top-tier service on your way to Pittsburgh, with our comfortable vehicles ensuring you arrive fresh and ready to take on the city.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,085 CAD | Van: $1,209 CAD | SUV: $1,240 CAD</h4><br><br>
+
+
+    <h1 class="hred">Harrisburg - 700 km</h1>
+    <h4 class="h3red">Whether for government business or exploring historic sites, our service to Harrisburg provides a smooth and stylish ride that meets all your travel needs.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $1,225 CAD | Van: $1,365 CAD | SUV: $1,400 CAD</h4><br><br>
+
+    <h1 class="hred">Scranton - 550 km</h1>
+    <h4 class="h3red">Take the stress out of traveling to Scranton with our reliable and luxurious transportation, ensuring you arrive on time and in comfort.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $962.50 CAD | Van: $1,072.50 CAD | SUV: $1,100 CAD</h4><br><br>
+
+
+        <h1 class="hred">Erie - 300 km</h1>
+    <h4 class="h3red">Our Erie service guarantees a smooth journey, ideal for those needing reliable transportation to this beautiful lakeside city.</h4>
+    <br><br>
+    <h4 class="h3red">Sedan: $525 CAD | Van: $585 CAD | SUV: $600 CAD</h4><br><br>
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<script src="{% static 'script.js'%}"></script>
+
+{% endblock %}
+

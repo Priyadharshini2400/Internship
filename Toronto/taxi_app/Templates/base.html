@@ -1,0 +1,28 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'styleR.css' %}">
+    <link rel="stylesheet" href="{% static 'styleN.css' %}">
+    <link rel="stylesheet" href="{% static 'styleAj.css' %}">
+    <link rel="stylesheet" href="{% static 'ancaster.css' %}">
+    <link rel="stylesheet" href="{% static 'blog.css' %}">
+</head>
+<body>
+    {% include 'includes/header.html' %}
+
+    {% block content%}
+    {% endblock %}
+
+    {% include 'includes/footer.html' %}
+
+    
+
+</body>
+</html>

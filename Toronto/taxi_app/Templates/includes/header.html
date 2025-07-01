@@ -1,0 +1,144 @@
+
+{%load static%}
+<nav class="nav">
+    <i class="bi bi-three-dots-vertical" id="ellips"></i>
+    <div class="nav-logo"><img src="{% static 'images/logo.webp'%}" alt="logo" class="nav-img"></div>
+    <div class="nav-content">
+        <ul class="nav-ul ">
+           <li><a href="/" class="nav-a">Home</a></li>
+           <li class="dropdown">
+            <a href=""class="nav-a">Why Choose Us?</a><select class="select-nav"></select>
+            <div class="nav-drop">
+                    <ul>
+                        <li><a href="">Pearson Toronto Airport Taxi Reviews</a></li>
+                        <li><a href="">Discount Flat Rates</a></li>
+                        <li><a href="">Pearson Toronto Airport Transportation Limo And Toronto Taxi</a></li>
+                        <li><a href="">Online Booking Pearson Airport Taxi and Limo</a></li>
+                    </ul>
+            </div>
+           </li>
+           <li class="dropdown">
+            <a href=""class="nav-a">Services</a><select class="select-nav"></select>
+            <div class="nav-drop">
+                    <ul>
+                        <li><a href="">Cities Pearson Airport Toronto Taxi Services</a></li>
+                        <li><a href="">Toronto Pearson Airport Taxi Service </a></li>
+                        <li><a href="">Taxi for Quarantine Center</a></li>
+                        <li><a href="">Pick-Up From Airport</a></li>
+                        <li><a href="">Drop-Off To Airport</a></li>
+                        <li><a href="">Taxi Vans To The Airport-Toronto Van Taxi</a></li>
+                        <li><a href="">Toronto & Pearson Airport Shuttle Service</a></li>
+                        <li><a href="">Luxury Town Car Service</a></li>
+                        <li><a href="">Hourly Limo Service</a></li>
+                        <li><a href="">Minivan Taxi</a></li>
+                        <li><a href="">Local & Out of Town Service</a></li>
+                        <li><a href="">Taxi With Child Car Seat</a></li>
+                        <li><a href="">Livery Car Service</a></li>
+                        <li><a href="">Airport Taxi Service Toronto - Your Convenient Airport Transportation</a></li>
+                    </ul>
+            </div>
+        </li>
+           <li class="dropdown">
+            <a href="" class="nav-a">Fleet</a><select class="select-nav"></select>
+             <div class="nav-drop">
+                    <ul>
+                        <li><a href="">Executive Taxis</a></li>
+                        <li><a href="">Executive Limousines</a></li>
+                        <li><a href="">Taxi Mini Vans</a></li>
+                        <li><a href="">Luxury SUV Limo</a></li>
+                    </ul>
+            </div>
+        </li>
+           <li class="dropdown">
+            <a href="" class="nav-a">Airport Info</a><select class="select-nav"></select>
+             <div class="nav-drop">
+                    <ul>
+                        <li><a href="">Billy Bishop Airport(YTZ)</a></li>
+                        <li><a href="">Toronto Pearson International Airport(YYZ)</a></li>
+                        <li><a href="">Buffalo Niagara International Airport(BUF)</a></li>
+                        <li><a href="">Hamilton International Airport(YHM)</a></li>
+                    </ul>
+            </div>
+        </li>
+           <li class="dropdown">
+            <a href="" class="nav-a">Cities</a><select class="select-nav"></select>
+            <div class="nav-drop">
+                    <ul>
+                        <li><a href="{% url 'ajax' %}">Ajax Airport Limo Service</a></li>
+                        <li><a href="{% url 'ancaster' %}">Ancaster Airport Limo Service & Taxi Service</a></li>
+                        <li><a href="">Aurora Airport Limo Service</a></li>
+                        <li><a href="">Barrie Airport Limo Service</a></li>
+                        <li><a href="">Beamsville to Toronto Pearson Airport</a></li>
+                        <li><a href="">Burlington to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Blue Mountain Airport Limo Service</a></li>
+                        <li><a href="">Bradford Airport Limo Service</a></li>
+                        <li><a href="">Brantford Airport Limo Service</a></li>
+                        <li><a href="">Buffalo Airport Limo Service</a></li>
+                        <li><a href="">Cambride Ontario to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Chatham Airport Limo Service</a></li>
+                        <li><a href="">Caledon to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Deerhurst Airport Limo Service</a></li>
+                        <li><a href="">East York Airport Limo Service</a></li>
+                        <li><a href="">Elora to Toronto Pearson Airport Transportation Taxi and Limo Service</a></li>
+                        <li><a href="">Georgetown to Pearson Toronto Airport Taxi and Limo Service</a></li>
+                        <li><a href="">Gravenhurst Airport Limo Service</a></li>
+                        <li><a href="">Grimsby to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Guelph Airport Limo Service</a></li>
+                        <li><a href="">Hamilton Airport Limo Service</a></li>
+                        <li><a href="">Hamilton Airport Transportaion Taxi & Limo Service</a></li>
+                        <li><a href="">Hagersville to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Kitchener Airport Limo Service</a></li>
+                        <li><a href="">Kingston to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">London, Ontario Airport Limo</a></li>
+                        <li><a href="">Markham Airport Limo Service</a></li>
+                        <li><a href="">Mississauga Airport Limo Service</a></li>
+                        <li><a href="">Montreal and Quebec to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Muskoka Airport Limo Service</a></li>
+                        <li><a href="">Newmarket to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Newcastle, Ontario Airport Limo Service</a></li>
+                        <li><a href="">Newmarket Limo Service</a></li>
+                        <li><a href="">Niagara Falls Airport Limo Service</a></li>
+                        <li><a href="">Niagara-on-the-Lake Airport Limo Service</a></li>
+                        <li><a href="">North York Airport Limo Service</a></li>
+                        <li><a href="">Oakville Burlington Airport Limo Service</a></li>
+                        <li><a href="">Orangeville to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Ottawa Airport Limo Service</a></li>
+                        <li><a href="">Owen Sound Airport Limo Service</a></li>
+                        <li><a href="">Oshawa to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Pearson Airport Toronto To Paris Ontario </a></li>
+                        <li><a href="">Peterborough Airport Limo Service</a></li>
+                        <li><a href="">Pickering to Toronto Pearson Airport Transportation </a></li>
+                        <li><a href="">Port Dover to Toronto Pearson Airport Transportation with Pearson Taxi and Limo Service</a></li>
+                        <li><a href="">Port Rowan To Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Port Stanley To Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Port Dalhousie To Toronto Pearson Airport with Pearson Toronto Airport Limo and Taxi Service</a></li>
+                        <li><a href="">Richmond Hill Airport Limo Service</a></li>
+                        <li><a href="">Scarbrough to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Shanty Bay To Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Simcoe County Airport Service to Toronto Pearson</a></li>
+                        <li><a href="">Smithville To Toronto Airport Transportation Taxi & Limo Service</a></li>
+                        <li><a href="">St.Catherine Airport Limo Service</a></li>
+                        <li><a href="">Stoney Creek to Pearson Toronto Airport Transportation</a></li>
+                        <li><a href="">Sudbury Airport Limo Service</a></li>
+                        <li><a href="">Thorold To Toronto Airport Transportation Taxi & Limo Service</a></li>
+                        <li><a href="">Toronto Airport Limo Service</a></li>
+                        <li><a href="">Toronto Tour from Pearson Airport: Taxi and Limo Transportation </a></li>
+                        <li><a href="">Trenton Airport Limo Service</a></li>
+                        <li><a href="">Vaughan Airport Limo Service</a></li>
+                        <li><a href="">Trenton Airport Limo Service</a></li>
+                        <li><a href="">Vaughan Airport Limo Service</a></li>
+                        <li><a href="">Windsor To Toronto Pearson Airport Taxi and Limo Transportation</a></li>
+                        <li><a href="">Welland Ontario to Toronto Pearson Airport Transportation</a></li>
+                        <li><a href="">Waterloo Airport Limo Service</a></li>
+                        <li><a href="">Woolwich to Toronto Pearson Airport Taxi and Limo Service</a></li>   
+                    </ul>
+            </div>
+        </li>
+           <li><a href="{% url 'rates' %}" class="nav-a">Rates</a></li>
+           <li><a href="{% url 'niagara' %}" class="nav-a">Niagara Falls Tour</a></li>
+           <li><a href="{% url 'blog' %}" class="nav-a">Blogs</a></li>
+
+        </ul>
+    </div>
+
+</nav>

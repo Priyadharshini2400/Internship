@@ -1,0 +1,104 @@
+.anhead{
+    height: 200px;
+    width: 100%;
+    background-color: #05d99c;
+}
+.anhead h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 55px;
+   
+}
+.anh1{
+    color: #05d99c;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.anh1s{
+    color: #05d99c;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.anp{
+    padding: 13px 190px;
+    line-height: 30px;
+    text-align: justify;
+}
+.anpl{
+    padding: 2px 190px;
+    line-height: 25px;
+    text-align: justify;
+}
+.anh1b{
+    padding: 18px 0px;
+    margin-left: 190px;
+}
+.animg img{
+    height: 500px;
+    width: 65%;
+}
+.animg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .anhead h1{
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    .anp{
+        padding: 15px 5px;
+    }
+    .anpl{
+    padding: 2px 5px;
+   
+}
+    .anh1s{
+
+    font-size: 25px;
+}
+.anh1b{
+    padding: 18px 0px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.animg img{
+    height: 200px;
+    width: 95%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+   .anhead h1{
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    .anp{
+        padding: 15px 5px;
+    }
+      .anh1s{
+
+    font-size: 25px;
+}
+.anh1b{
+    padding: 18px 0px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.animg img{
+    height: 200px;
+    width: 95%;
+}
+  .anpl{
+    padding: 2px 5px;
+   
+}
+
+}
+
