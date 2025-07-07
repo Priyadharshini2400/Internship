@@ -11,6 +11,7 @@ def home(request):
             PickupTime=request.POST.get("PickupTime"),
             PickupLocation=request.POST.get("PickupLocation"),
             DropOff=request.POST.get("DropOff"),
+            Transfer=request.POST.get("Transfer"),
             
         )
         ride.save()

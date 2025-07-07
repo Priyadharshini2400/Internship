@@ -1,5 +1,4 @@
 
-
 <div class="page-wrapper">
 {% extends 'base.html' %}
 
@@ -44,7 +43,8 @@
         {%csrf_token%}
       <div class="f-date">
         <p>PICKUP DATE</p>
-        <input type="date" name="PickupDate" id="icon-input">
+        <!-- <input type="date" name="PickupDate" id="icon-input"> -->
+        <input type="date" name="PickupDate" id="pickup-date">
       </div>
       <div class="f-time">
         <p>PICKUP TIME</p>
@@ -60,6 +60,20 @@
             <i class="bi bi-geo-alt"><input type="text" id="f-place" placeholder="Enter a Location" name="DropOff" id="icon-input"></i>
 
       </div>
+
+      <div class="form-group transfer-type" style="border-right: 1px solid #ccc;  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+            <label for="transferType">TRANSFER TYPE</label>
+            <input type="hidden" id="transferInput" name="Transfer" value="One Way">
+             <div class="custom-select" onclick="toggleDropdown()">
+                <div id="selectedOption">One Way</div>
+                <div class="dropdown-arrow"><span class="ts"  >▼</span></div>
+                <div class="dropdown-options" id="dropdownOptions">
+                    <div onclick="selectOption('One Way')">One Way</div>
+                    <div onclick="selectOption('Return')">Return</div>
+                    <div onclick="selectOption('Return (new ride)')">Return (new ride)</div>
+                </div>
+            </div>
+        </div>
       <div class="f-booknow">
         <input type="submit" value="BOOK NOW" id="f-btn">
       </div>
@@ -604,9 +618,6 @@ Popular Destinations and Flat Rates</h2>
     
   </div>
 </div>
-</div>
-
-
 </div>
 
 
@@ -1378,7 +1389,7 @@ Popular Destinations and Flat Rates</h2>
 </div>
 
 
-
+      
 
 
 

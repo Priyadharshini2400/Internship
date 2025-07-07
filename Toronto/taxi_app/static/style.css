@@ -262,6 +262,8 @@ html,body{
     justify-content: center;
     align-items: center;
     padding-left: 30px;
+    padding-right: 20px;
+    
 }
 #f-btn{
     border-radius: 40px;
@@ -280,11 +282,11 @@ html,body{
 }
 
 .f-booking{
-    width: 75%;
+    width: 82%;
     height: 100px;
     background-color: white;
     position: absolute;
-    left: 14%;
+    left: 10%;
     bottom: 60px;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
@@ -303,7 +305,7 @@ html,body{
     outline: none;
 }
 .f-drop{
-    padding-right: 50px;
+    padding-right: -10px;
 }
 .f-date p,.f-time p,.f-picloc p,.f-drop p{
     font-size: 13px;
@@ -334,7 +336,7 @@ html,body{
     }
 }
 .f-booking{
-    animation-name: book;
+  animation-name: book;
   animation-duration: 2s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -2387,3 +2389,22 @@ body{
 
 }
 
+/* .blogr p{
+    padding: 20px;
+}
+.blogr{
+    background-color: gainsboro;
+    border-top: 1px solid rgba(255, 105, 0, 1);
+}
+.showthis{
+    display: block;
+}
+.showthis.actives{
+    display: none;
+}
+.mainshow{
+    display: block;
+}
+.mainshow.actives{
+    display: none;
+} */
