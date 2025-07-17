@@ -8,4 +8,7 @@ urlpatterns=[
     path('ajax',views.ajax,name='ajax'),
     path('ancaster',views.ancaster,name='ancaster'),
     path('blog',views.blog,name='blog'),
+    path('detail',views.detail,name='detail'),
+    
+    
 ]

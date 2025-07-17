@@ -11,3 +11,4 @@ class info(forms.ModelForm):
             'Transfer',
             'ExtraTime',
         ]
+
